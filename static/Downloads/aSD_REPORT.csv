@@ -1,0 +1,2870 @@
+,reportname,modelpath,dataitem,filtername
+0,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[CONTACT_IOT],
+1,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[CONTACT_SECTOR_NAME],
+2,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[CONTACT_ACCOUNT_NAME],
+3,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[MTAS_ACCOUNT_NAME],
+4,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[CYCLE_DATE],
+5,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[ACTIVE_STATUS],
+6,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[LAST_UPDATE_TS],
+7,aSD_REPORT,/content/folder[@name='NA']/folder[@name='GTS Metrics Project']/folder[@name='Packages']/folder[@name='Framework Package']/package[@name='FPK_GTSM']/model[@name='2017-06-09T10:06:57.109Z'],,
+8,aSD_REPORT,,,
+9,aSD_REPORT,,,[MTAS_ACCOUNT_NAME] is not null
+10,aSD_REPORT,,,[ACTIVE_STATUS] = 'A'
+11,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[CONTACT_IOT],
+12,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[CONTACT_SECTOR_NAME],
+13,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[CONTACT_ACCOUNT_NAME],
+14,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[MTAS_ACCOUNT_NAME],
+15,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[CYCLE_DATE],
+16,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[ACTIVE_STATUS],
+17,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[LAST_UPDATE_TS],
+18,aSD_REPORT,/content/folder[@name='NA']/folder[@name='GTS Metrics Project']/folder[@name='Packages']/folder[@name='Framework Package']/package[@name='FPK_GTSM']/model[@name='2017-06-09T10:06:57.109Z'],,
+19,aSD_REPORT,,,
+20,aSD_REPORT,,,[MTAS_ACCOUNT_NAME] is not null
+21,aSD_REPORT,,,[ACTIVE_STATUS] = 'A'
+22,aSD_REPORT,,[Business View].[B_TABLE].[CONTRACTS],
+23,aSD_REPORT,,[Business View].[B_TABLE].[AFFILIATE_NUMBER],
+24,aSD_REPORT,,[Business View].[C_TABLE].[COVERAGE_ID],
+25,aSD_REPORT,,[Business View].[C_TABLE].[Validated Rev Target],
+26,aSD_REPORT,,[Business View].[C_TABLE].[Validated GP Target],
+27,aSD_REPORT,,"case when [Business View].[D_TABLE].[COV_ID] is null
+then [Business View].[D_TABLE].[CONTRACTS]
+else [Business View].[D_TABLE].[COV_ID]
+end",
+28,aSD_REPORT,,[Business View].[D_TABLE].[30 Revenue Majors],
+29,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - Rev Majors],
+30,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - Rev Majors],
+31,aSD_REPORT,,[Business View].[D_TABLE].[30 GP BCP],
+32,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - GP BCP],
+33,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - GP BCP],
+34,aSD_REPORT,,[Business View].[D_TABLE].[30 GP BMC],
+35,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - GP BMC],
+36,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - GP BMC],
+37,aSD_REPORT,,"case when 
+[Business View].[E1_TABLE].[COV_ID] is null
+then [Business View].[E1_TABLE].[CONTRACTS]
+else [Business View].[E1_TABLE].[COV_ID]
+end",
+38,aSD_REPORT,,[Business View].[E1_TABLE].[30 Total 6 mo XaaS],
+39,aSD_REPORT,,[Business View].[E1_TABLE].[30 Total 12 mo XaaS],
+40,aSD_REPORT,,[Business View].[E2_TABLE].[COV_ID],
+41,aSD_REPORT,,[Business View].[E2_TABLE].[TOTAL_6_MO_XAAS],
+42,aSD_REPORT,,[Business View].[E2_TABLE].[TOTAL_12_MO_XAAS],
+43,aSD_REPORT,,[Business View].[F_TABLE].[COVERAGE_ID],
+44,aSD_REPORT,,"
+[Business View].[F_TABLE].[IS_30_SLASH_46_LT10]",
+45,aSD_REPORT,,[Business View].[F_TABLE].[DIV_46_GT10],
+46,aSD_REPORT,,[Business View].[F_TABLE].[DIV_30_GT10],
+47,aSD_REPORT,,[Business View].[F_TABLE].[IS_DIV_30_SLASH_46_TOTAL],
+48,aSD_REPORT,,[Business View].[F_TABLE].[DIV_30_LT10],
+49,aSD_REPORT,,[Business View].[G_TABLE].[Cov Id],
+50,aSD_REPORT,,[Business View].[G_TABLE].[TOTAL REV Quota - Moonlight],
+51,aSD_REPORT,,[Business View].[G_TABLE].[TOTAL GP Quota - Moonlight],
+52,aSD_REPORT,,"COALESCE([C].[COV_ID],[D].[COV_ID])",
+53,aSD_REPORT,,[C].[C_Validated Rev Target],
+54,aSD_REPORT,,[C].[C_Validated GP Target],
+55,aSD_REPORT,,[D].[D 30 Revenue 3Q],
+56,aSD_REPORT,,[D].[D 30 Revenue 4Q],
+57,aSD_REPORT,,[D].[D 30 Revenue],
+58,aSD_REPORT,,[D].[D 30 GP BCP 3Q],
+59,aSD_REPORT,,[D].[D 30 GP BCP 4Q],
+60,aSD_REPORT,,[D].[D 30 GP Contract BCP],
+61,aSD_REPORT,,[D].[D 30 GP BMC 3Q],
+62,aSD_REPORT,,[D].[D 30 GP BMC 4Q],
+63,aSD_REPORT,,[D].[D 30 GP Contract BMC],
+64,aSD_REPORT,,"COALESCE([C&D].[COV_ID],[F].[COV_ID])
+",
+65,aSD_REPORT,,[C&D].[C_Validated Rev Target],
+66,aSD_REPORT,,[C&D].[C_Validated GP Target],
+67,aSD_REPORT,,[C&D].[D 30 Revenue 3Q],
+68,aSD_REPORT,,[C&D].[D 30 Revenue 4Q],
+69,aSD_REPORT,,[C&D].[D 30 Revenue],
+70,aSD_REPORT,,[C&D].[D 30 GP BCP 3Q],
+71,aSD_REPORT,,[C&D].[D 30 GP BCP 4Q],
+72,aSD_REPORT,,[C&D].[D 30 GP Contract BCP],
+73,aSD_REPORT,,[C&D].[D 30 GP BMC 3Q],
+74,aSD_REPORT,,[C&D].[D 30 GP BMC 4Q],
+75,aSD_REPORT,,[C&D].[D 30 GP Contract BMC],
+76,aSD_REPORT,,[F].[F IS 30/46 Total Signings],
+77,aSD_REPORT,,[F].[F IS 30/46 LT10 Signings],
+78,aSD_REPORT,,[F].[F Div 30 GT10 Signings],
+79,aSD_REPORT,,[F].[F Div 46 GT10 Signings],
+80,aSD_REPORT,,"COALESCE([E1].[COV_ID],[E2].[COV_ID])
+",
+81,aSD_REPORT,,[E1].[30 Total 6 mo XaaS],
+82,aSD_REPORT,,[E1].[30 Total 12 mo XaaS],
+83,aSD_REPORT,,[E2].[TOTAL_6_MO_XAAS],
+84,aSD_REPORT,,[E2].[TOTAL_12_MO_XAAS],
+85,aSD_REPORT,,"COALESCE([E1&E2].[COV_ID],[G].[COV_ID])
+",
+86,aSD_REPORT,,[E1&E2].[E1 30 Total 6 mo XaaS],
+87,aSD_REPORT,,[E1&E2].[E1 30 Total 12 mo XaaS],
+88,aSD_REPORT,,[E1&E2].[E2 TOTAL_6_MO_XAAS],
+89,aSD_REPORT,,[E1&E2].[E2 TOTAL_12_MO_XAAS],
+90,aSD_REPORT,,[G].[TOTAL REV Quota - Moonlight],
+91,aSD_REPORT,,[G].[TOTAL GP Quota - Moonlight],
+92,aSD_REPORT,,"COALESCE([C&D&F].[COV_ID],[E1&E2&G].[COV_ID])
+",
+93,aSD_REPORT,,"(case when [D&G 30 Revenue] is null then 0
+else [D&G 30 Revenue]
+end)+
+(case when[C 46 Revenue] is null then 0
+else [C 46 Revenue]
+end)
+
+",
+94,aSD_REPORT,,"(case when [D 30 Revenue] is null then 0
+else [D 30 Revenue]
+end)+
+(case when [G 30 Moonlight Rev] is null then 0
+else [G 30 Moonlight Rev]
+end)
+",
+95,aSD_REPORT,,[G TOTAL REV Quota - Moonlight],
+96,aSD_REPORT,,[C&D&F].[D 30 Revenue],
+97,aSD_REPORT,,[C&D&F].[D 30 Revenue 3Q],
+98,aSD_REPORT,,[C&D&F].[D 30 Revenue 4Q],
+99,aSD_REPORT,,[C_Validated Rev Target],
+100,aSD_REPORT,,"(case when [D 30 GP Contract BCP] is null then 0
+else [D 30 GP Contract BCP]
+end)+
+(case when [G 30 Moonlight GP BCP] is null then 0
+else [G 30 Moonlight GP BCP]
+end)
++
+(case when [C 46 Validated GP Target] is null then 0
+else [C 46 Validated GP Target]
+end)
+",
+101,aSD_REPORT,,[C&D&F].[D 30 GP Contract BCP],
+102,aSD_REPORT,,[C&D&F].[D 30 GP BCP 3Q],
+103,aSD_REPORT,,[C&D&F].[D 30 GP BCP 4Q],
+104,aSD_REPORT,,[G TOTAL GP Quota - Moonlight],
+105,aSD_REPORT,,[C_Validated GP Target],
+106,aSD_REPORT,,"(case when [D 30 GP Contract BMC] is null then 0
+else [D 30 GP Contract BMC]
+end)+
+(case when [G 30 Moonlight GP BMC] is null then 0
+else [G 30 Moonlight GP BMC]
+end)
+
+
+",
+107,aSD_REPORT,,[C&D&F].[D 30 GP Contract BMC],
+108,aSD_REPORT,,[C&D&F].[D 30 GP BMC 3Q],
+109,aSD_REPORT,,[C&D&F].[D 30 GP BMC 4Q],
+110,aSD_REPORT,,[E1&E2&G].[G TOTAL GP Quota - Moonlight],
+111,aSD_REPORT,,[C&D&F].[F IS 30/46 Total Signings],
+112,aSD_REPORT,,[C&D&F].[F IS 30/46 LT10 Signings],
+113,aSD_REPORT,,[C&D&F].[F Div 30 GT10 Signings],
+114,aSD_REPORT,,[C&D&F].[F Div 46 GT10 Signings],
+115,aSD_REPORT,,"(case when [E1 30 Total 6 mo XaaS] is null then 0
+else [E1 30 Total 6 mo XaaS]
+end)+
+(case when [E2 46 Total 6 mo XaaS] is null then 0
+else [E2 46 Total 6 mo XaaS]
+end)
++
+(case when [G 30 Moonlight XaaS] is null then 0
+else [G 30 Moonlight XaaS]
+end)",
+116,aSD_REPORT,,[E1&E2&G].[E1 30 Total 6 mo XaaS],
+117,aSD_REPORT,,[E2 TOTAL_6_MO_XAAS],
+118,aSD_REPORT,,[E1&E2&G].[G TOTAL REV Quota - Moonlight],
+119,aSD_REPORT,,[C&D&F].[C_Validated Rev Target],
+120,aSD_REPORT,,[C&D&F].[C_Validated GP Target],
+121,aSD_REPORT,,[E1&E2&G].[E1 30 Total 12 mo XaaS],
+122,aSD_REPORT,,[E1&E2&G].[E2 TOTAL_6_MO_XAAS],
+123,aSD_REPORT,,[E1&E2&G].[E2 TOTAL_12_MO_XAAS],
+124,aSD_REPORT,,[E1&E2&G].[G TOTAL REV Quota - Moonlight],
+125,aSD_REPORT,,[E1&E2&G].[G TOTAL GP Quota - Moonlight],
+126,aSD_REPORT,,"replace(substr([Business View].[QUOTA_KEYSTONE_T_MAIN].[MARKET_NAME],4),'/CSI','')
+",
+127,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[TERRITORY_TYPE],
+128,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COVERAGE_ID_NAME],
+129,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COV_ID],
+130,aSD_REPORT,,"'unknown'
+",
+131,aSD_REPORT,,'unknown',
+132,aSD_REPORT,,'unknown',
+133,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COV_ID],
+134,aSD_REPORT,,"case when 
+[KEYSTONE].[Market Name] is null then 'unknown'
+else  [KEYSTONE].[Market Name]
+end",
+135,aSD_REPORT,,"case when  [KEYSTONE].[Customer Set] is null
+then 'unknown'
+else  [KEYSTONE].[Customer Set]
+end",
+136,aSD_REPORT,,"case when [KEYSTONE].[Coverage ID Name] is null
+then 'unknown'
+else [KEYSTONE].[Coverage ID Name]
+end",
+137,aSD_REPORT,,"COALESCE([C&D&E1&E2&F&G].[COV_ID],[KEYSTONE].[Cov Id])",
+138,aSD_REPORT,,"case 
+when [Cov ID1] in ('912_CFCNLEA','912_CFLOAC','912_CFCOMEA')
+then 'C000000'
+when [Cov ID1] in ('912_CFDSNLE','912_CFDISWE','912_CFLOAD')
+then 'D000000'
+when [Cov ID1] in ('912_CFBNKEA','912_CFFNMEA','912_CFFSSEA','912_CFLOAF','912_CFINSWE')
+then 'F000000'
+when [Cov ID1] in ('912_CFLOAI')
+then 'I000000'
+when [Cov ID1] in ('912_CFLOAP')
+then 'P000000'
+else  [Cov ID1]
+end",
+139,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G&C 30 Revenue],
+140,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G 30 Revenue],
+141,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight Rev],
+142,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue],
+143,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue 3Q],
+144,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue 4Q],
+145,aSD_REPORT,,[C&D&E1&E2&F&G].[C 46 Revenue],
+146,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G&C BCP GP],
+147,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP Contract BCP],
+148,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BCP 3Q],
+149,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BCP 4Q],
+150,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight GP BCP],
+151,aSD_REPORT,,[C&D&E1&E2&F&G].[C 46 Validated GP Target],
+152,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G BMC GP],
+153,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP Contract BMC],
+154,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BMC 3Q],
+155,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BMC 4Q],
+156,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight GP BMC],
+157,aSD_REPORT,,[C&D&E1&E2&F&G].[F IS 30/46 Total Signings],
+158,aSD_REPORT,,[C&D&E1&E2&F&G].[F IS 30/46 LT10 Signings],
+159,aSD_REPORT,,[C&D&E1&E2&F&G].[F Div 30 GT10 Signings],
+160,aSD_REPORT,,[C&D&E1&E2&F&G].[F Div 46 GT10 Signings],
+161,aSD_REPORT,,[C&D&E1&E2&F&G].[E XaaS],
+162,aSD_REPORT,,[C&D&E1&E2&F&G].[E1 30 Total 6 mo XaaS],
+163,aSD_REPORT,,[C&D&E1&E2&F&G].[E2 46 Total 6 mo XaaS],
+164,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight XaaS],
+165,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then 'Communication'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then 'Distribution'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then 'Financial Service'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then 'Industrial'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then 'Public'
+else [Main0].[Market Name]
+end",
+166,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] IN ('C000000','D000000','F000000','I000000','P000000') then 'unknown'
+else [Main0].[Customer Set]
+end",
+167,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then '_COMMUNICATIONS PLUG'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then '_DISTRIBUTION PLUG'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then '_FINANCIAL SERVICES PLUG'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then '_INDUSTRIAL PLUG'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then '_PUBLIC PLUG'
+else [Main0].[Coverage ID Name]
+end",
+168,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then 'C000000'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then 'D000000'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then 'F000000'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then 'I000000'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then 'P000000'
+else [Main0].[Cov ID1]
+end",
+169,aSD_REPORT,,[Main0].[D&G&C 30 Revenue],
+170,aSD_REPORT,,[Main0].[D&G 30 Revenue],
+171,aSD_REPORT,,[Main0].[G 30 Moonlight Rev],
+172,aSD_REPORT,,[Main0].[D 30 Revenue],
+173,aSD_REPORT,,[Main0].[D 30 Revenue 3Q],
+174,aSD_REPORT,,[Main0].[D 30 Revenue 4Q],
+175,aSD_REPORT,,[Main0].[C 46 Revenue],
+176,aSD_REPORT,,[Main0].[D&G&C BCP GP],
+177,aSD_REPORT,,[Main0].[D 30 GP Contract BCP],
+178,aSD_REPORT,,[Main0].[D 30 GP BCP 3Q],
+179,aSD_REPORT,,[Main0].[D 30 GP BCP 4Q],
+180,aSD_REPORT,,[Main0].[G 30 Moonlight GP BCP],
+181,aSD_REPORT,,[Main0].[C 46 Validated GP Target],
+182,aSD_REPORT,,[Main0].[D&G BMC GP],
+183,aSD_REPORT,,[Main0].[D 30 GP Contract BMC],
+184,aSD_REPORT,,[Main0].[D 30 GP BMC 3Q],
+185,aSD_REPORT,,[Main0].[D 30 GP BMC 4Q],
+186,aSD_REPORT,,[Main0].[G 30 Moonlight GP BMC],
+187,aSD_REPORT,,[Main0].[F IS 30/46 Total Signings],
+188,aSD_REPORT,,[Main0].[F IS 30/46 LT10 Signings],
+189,aSD_REPORT,,[Main0].[F Div 30 GT10 Signings],
+190,aSD_REPORT,,[Main0].[F Div 46 GT10 Signings],
+191,aSD_REPORT,,[Main0].[E XaaS],
+192,aSD_REPORT,,[Main0].[E1 30 Total 6 mo XaaS],
+193,aSD_REPORT,,[Main0].[E2 46 Total 6 mo XaaS],
+194,aSD_REPORT,,[Main0].[G 30 Moonlight XaaS],
+195,aSD_REPORT,,[Main].[Market Name],
+196,aSD_REPORT,,[Main].[Customer Set],
+197,aSD_REPORT,,[Main].[Coverage ID Name],
+198,aSD_REPORT,,[Main].[Cov ID],
+199,aSD_REPORT,,"case
+when [Main].[D&G&C 30 Revenue] is null then 0 
+else [Main].[D&G&C 30 Revenue]
+end",
+200,aSD_REPORT,,"case
+when [Main].[D&G 30 Revenue] is null then 0 
+else [Main].[D&G 30 Revenue]
+end",
+201,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight Rev] is null then 0 
+else [Main].[G 30 Moonlight Rev]
+end",
+202,aSD_REPORT,,"case
+when [Main].[D 30 Revenue] is null then 0
+else [Main].[D 30 Revenue]
+end",
+203,aSD_REPORT,,"case
+when [Main].[D 30 Revenue 3Q] is null then 0 
+else [Main].[D 30 Revenue 3Q]
+end",
+204,aSD_REPORT,,"case
+when [Main].[D 30 Revenue 4Q] is null then 0
+else [Main].[D 30 Revenue 4Q]
+end",
+205,aSD_REPORT,,"case
+when [Main].[C 46 Revenue] is null then 0
+else [Main].[C 46 Revenue]
+end",
+206,aSD_REPORT,,"case
+when [Main].[D&G&C BCP GP] is null then 0
+else [Main].[D&G&C BCP GP]
+end",
+207,aSD_REPORT,,"case
+when [Main].[D 30 GP Contract BCP] is null then 0
+else [Main].[D 30 GP Contract BCP]
+end",
+208,aSD_REPORT,,"case
+when [Main].[D 30 GP BCP 3Q] is null then 0
+else [Main].[D 30 GP BCP 3Q]
+end",
+209,aSD_REPORT,,"case
+when [Main].[D 30 GP BCP 4Q] is null then 0
+else [Main].[D 30 GP BCP 4Q]
+end",
+210,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight GP BCP] is null then 0
+else [Main].[G 30 Moonlight GP BCP]
+end",
+211,aSD_REPORT,,"case
+when [Main].[C 46 Validated GP Target] is null then 0
+else [Main].[C 46 Validated GP Target]
+end",
+212,aSD_REPORT,,"case
+when [Main].[D&G BMC GP] is null then 0
+else [Main].[D&G BMC GP]
+end",
+213,aSD_REPORT,,"case
+when [Main].[D 30 GP Contract BMC] is null then 0
+else [Main].[D 30 GP Contract BMC]
+end",
+214,aSD_REPORT,,"case
+when [Main].[D 30 GP BMC 3Q] is null then 0
+else [Main].[D 30 GP BMC 3Q]
+end",
+215,aSD_REPORT,,"case
+when [Main].[D 30 GP BMC 4Q] is null then 0
+else [Main].[D 30 GP BMC 4Q]
+end",
+216,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight GP BMC] is null then 0 
+else [Main].[G 30 Moonlight GP BMC]
+end",
+217,aSD_REPORT,,"case
+when [Main].[F IS 30/46 Total Signings] is null then 0
+else [Main].[F IS 30/46 Total Signings]
+end",
+218,aSD_REPORT,,"case
+when [Main].[F IS 30/46 LT10 Signings] is null then 0
+else [Main].[F IS 30/46 LT10 Signings]
+end",
+219,aSD_REPORT,,"case
+when [Main].[F Div 30 GT10 Signings] is null then 0
+else [Main].[F Div 30 GT10 Signings]
+end",
+220,aSD_REPORT,,"case
+when [Main].[F Div 46 GT10 Signings] is null then 0
+else [Main].[F Div 46 GT10 Signings]
+end",
+221,aSD_REPORT,,"case
+when [Main].[E XaaS] is null then 0
+else [Main].[E XaaS]
+end",
+222,aSD_REPORT,,"case
+when [Main].[E1 30 Total 6 mo XaaS] is null then 0
+else [Main].[E1 30 Total 6 mo XaaS]
+end",
+223,aSD_REPORT,,"case
+when [Main].[E2 46 Total 6 mo XaaS] is null then 0
+else [Main].[E2 46 Total 6 mo XaaS]
+end",
+224,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight XaaS] is null then 0
+else [Main].[G 30 Moonlight XaaS]
+end",
+225,aSD_REPORT,,[Main].[Market Name],
+226,aSD_REPORT,,[Main].[Customer Set],
+227,aSD_REPORT,,[Main].[Coverage ID Name],
+228,aSD_REPORT,,[Main].[Cov ID],
+229,aSD_REPORT,,[Main2].[Market Name],
+230,aSD_REPORT,,[Main2].[Customer Set],
+231,aSD_REPORT,/content/folder[@name='Quota Folder']/package[@name='S&D Package']/model[@name='2017-06-22T08:47:18.794Z'],,
+232,aSD_REPORT,,,
+233,aSD_REPORT,,,
+234,aSD_REPORT,,,
+235,aSD_REPORT,,,
+236,aSD_REPORT,,,
+237,aSD_REPORT,,,
+238,aSD_REPORT,,,
+239,aSD_REPORT,,,
+240,aSD_REPORT,,,
+241,aSD_REPORT,,,
+242,aSD_REPORT,,,
+243,aSD_REPORT,,,
+244,aSD_REPORT,,,
+245,aSD_REPORT,,,
+246,aSD_REPORT,,,
+247,aSD_REPORT,,,
+248,aSD_REPORT,,,
+249,aSD_REPORT,,,
+250,aSD_REPORT,,,
+251,aSD_REPORT,,,
+252,aSD_REPORT,,,[AFFILIATE_NUMBER] = 'F000000'
+253,aSD_REPORT,,,[Business View].[C_TABLE].[PERIOD]='2H'
+254,aSD_REPORT,,,[Business View].[C_TABLE].[BRAND]='IS - ITS'
+255,aSD_REPORT,,,[COV_ID] IS NOT NULL
+256,aSD_REPORT,,,[C].[COV_ID] = [D].[COV_ID]
+257,aSD_REPORT,,,[C&D].[COV_ID] = [F].[COV_ID]
+258,aSD_REPORT,,,[E1].[COV_ID] = [E2].[COV_ID]
+259,aSD_REPORT,,,[E1&E2].[COV_ID] = [G].[COV_ID]
+260,aSD_REPORT,,,[C&D&F].[COV_ID] = [E1&E2&G].[COV_ID]
+261,aSD_REPORT,,,[C&D&E1&E2&F&G].[COV_ID] = [KEYSTONE].[Cov Id]
+262,aSD_REPORT,,,[Cov ID] in ?CovID?
+263,aSD_REPORT,,,[Main0].[Cov ID1] = [B].[CONTRACTS]
+264,aSD_REPORT,,,[Market Name] in ?Market?
+265,aSD_REPORT,,,[Customer Set] in ?CustomerSet?
+266,aSD_REPORT,,[Business View].[B_TABLE].[CONTRACTS],
+267,aSD_REPORT,,[Business View].[B_TABLE].[AFFILIATE_NUMBER],
+268,aSD_REPORT,,[Business View].[C_TABLE].[COVERAGE_ID],
+269,aSD_REPORT,,[Business View].[C_TABLE].[Validated Rev Target],
+270,aSD_REPORT,,[Business View].[C_TABLE].[Validated GP Target],
+271,aSD_REPORT,,"case when [Business View].[D_TABLE].[COV_ID] is null
+then [Business View].[D_TABLE].[CONTRACTS]
+else [Business View].[D_TABLE].[COV_ID]
+end",
+272,aSD_REPORT,,[Business View].[D_TABLE].[30 Revenue Majors],
+273,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - Rev Majors],
+274,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - Rev Majors],
+275,aSD_REPORT,,[Business View].[D_TABLE].[30 GP BCP],
+276,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - GP BCP],
+277,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - GP BCP],
+278,aSD_REPORT,,[Business View].[D_TABLE].[30 GP BMC],
+279,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - GP BMC],
+280,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - GP BMC],
+281,aSD_REPORT,,"case when 
+[Business View].[E1_TABLE].[COV_ID] is null
+then [Business View].[E1_TABLE].[CONTRACTS]
+else [Business View].[E1_TABLE].[COV_ID]
+end",
+282,aSD_REPORT,,[Business View].[E1_TABLE].[30 Total 6 mo XaaS],
+283,aSD_REPORT,,[Business View].[E1_TABLE].[30 Total 12 mo XaaS],
+284,aSD_REPORT,,[Business View].[E2_TABLE].[COV_ID],
+285,aSD_REPORT,,[Business View].[E2_TABLE].[TOTAL_6_MO_XAAS],
+286,aSD_REPORT,,[Business View].[E2_TABLE].[TOTAL_12_MO_XAAS],
+287,aSD_REPORT,,[Business View].[F_TABLE].[COVERAGE_ID],
+288,aSD_REPORT,,"
+[Business View].[F_TABLE].[IS_30_SLASH_46_LT10]",
+289,aSD_REPORT,,[Business View].[F_TABLE].[DIV_46_GT10],
+290,aSD_REPORT,,[Business View].[F_TABLE].[DIV_30_GT10],
+291,aSD_REPORT,,[Business View].[F_TABLE].[IS_DIV_30_SLASH_46_TOTAL],
+292,aSD_REPORT,,[Business View].[F_TABLE].[DIV_30_LT10],
+293,aSD_REPORT,,[Business View].[G_TABLE].[Cov Id],
+294,aSD_REPORT,,[Business View].[G_TABLE].[TOTAL REV Quota - Moonlight],
+295,aSD_REPORT,,[Business View].[G_TABLE].[TOTAL GP Quota - Moonlight],
+296,aSD_REPORT,,"COALESCE([C].[COV_ID],[D].[COV_ID])",
+297,aSD_REPORT,,[C].[C_Validated Rev Target],
+298,aSD_REPORT,,[C].[C_Validated GP Target],
+299,aSD_REPORT,,[D].[D 30 Revenue 3Q],
+300,aSD_REPORT,,[D].[D 30 Revenue 4Q],
+301,aSD_REPORT,,[D].[D 30 Revenue],
+302,aSD_REPORT,,[D].[D 30 GP BCP 3Q],
+303,aSD_REPORT,,[D].[D 30 GP BCP 4Q],
+304,aSD_REPORT,,[D].[D 30 GP Contract BCP],
+305,aSD_REPORT,,[D].[D 30 GP BMC 3Q],
+306,aSD_REPORT,,[D].[D 30 GP BMC 4Q],
+307,aSD_REPORT,,[D].[D 30 GP Contract BMC],
+308,aSD_REPORT,,"COALESCE([C&D].[COV_ID],[F].[COV_ID])
+",
+309,aSD_REPORT,,[C&D].[C_Validated Rev Target],
+310,aSD_REPORT,,[C&D].[C_Validated GP Target],
+311,aSD_REPORT,,[C&D].[D 30 Revenue 3Q],
+312,aSD_REPORT,,[C&D].[D 30 Revenue 4Q],
+313,aSD_REPORT,,[C&D].[D 30 Revenue],
+314,aSD_REPORT,,[C&D].[D 30 GP BCP 3Q],
+315,aSD_REPORT,,[C&D].[D 30 GP BCP 4Q],
+316,aSD_REPORT,,[C&D].[D 30 GP Contract BCP],
+317,aSD_REPORT,,[C&D].[D 30 GP BMC 3Q],
+318,aSD_REPORT,,[C&D].[D 30 GP BMC 4Q],
+319,aSD_REPORT,,[C&D].[D 30 GP Contract BMC],
+320,aSD_REPORT,,[F].[F IS 30/46 Total Signings],
+321,aSD_REPORT,,[F].[F IS 30/46 LT10 Signings],
+322,aSD_REPORT,,[F].[F Div 30 GT10 Signings],
+323,aSD_REPORT,,[F].[F Div 46 GT10 Signings],
+324,aSD_REPORT,,"COALESCE([E1].[COV_ID],[E2].[COV_ID])
+",
+325,aSD_REPORT,,[E1].[30 Total 6 mo XaaS],
+326,aSD_REPORT,,[E1].[30 Total 12 mo XaaS],
+327,aSD_REPORT,,[E2].[TOTAL_6_MO_XAAS],
+328,aSD_REPORT,,[E2].[TOTAL_12_MO_XAAS],
+329,aSD_REPORT,,"COALESCE([E1&E2].[COV_ID],[G].[COV_ID])
+",
+330,aSD_REPORT,,[E1&E2].[E1 30 Total 6 mo XaaS],
+331,aSD_REPORT,,[E1&E2].[E1 30 Total 12 mo XaaS],
+332,aSD_REPORT,,[E1&E2].[E2 TOTAL_6_MO_XAAS],
+333,aSD_REPORT,,[E1&E2].[E2 TOTAL_12_MO_XAAS],
+334,aSD_REPORT,,[G].[TOTAL REV Quota - Moonlight],
+335,aSD_REPORT,,[G].[TOTAL GP Quota - Moonlight],
+336,aSD_REPORT,,"COALESCE([C&D&F].[COV_ID],[E1&E2&G].[COV_ID])
+",
+337,aSD_REPORT,,"(case when [D&G 30 Revenue] is null then 0
+else [D&G 30 Revenue]
+end)+
+(case when[C 46 Revenue] is null then 0
+else [C 46 Revenue]
+end)
+
+",
+338,aSD_REPORT,,"(case when [D 30 Revenue] is null then 0
+else [D 30 Revenue]
+end)+
+(case when [G 30 Moonlight Rev] is null then 0
+else [G 30 Moonlight Rev]
+end)
+",
+339,aSD_REPORT,,[G TOTAL REV Quota - Moonlight],
+340,aSD_REPORT,,[C&D&F].[D 30 Revenue],
+341,aSD_REPORT,,[C&D&F].[D 30 Revenue 3Q],
+342,aSD_REPORT,,[C&D&F].[D 30 Revenue 4Q],
+343,aSD_REPORT,,[C_Validated Rev Target],
+344,aSD_REPORT,,"(case when [D 30 GP Contract BCP] is null then 0
+else [D 30 GP Contract BCP]
+end)+
+(case when [G 30 Moonlight GP BCP] is null then 0
+else [G 30 Moonlight GP BCP]
+end)
++
+(case when [C 46 Validated GP Target] is null then 0
+else [C 46 Validated GP Target]
+end)
+",
+345,aSD_REPORT,,[C&D&F].[D 30 GP Contract BCP],
+346,aSD_REPORT,,[C&D&F].[D 30 GP BCP 3Q],
+347,aSD_REPORT,,[C&D&F].[D 30 GP BCP 4Q],
+348,aSD_REPORT,,[G TOTAL GP Quota - Moonlight],
+349,aSD_REPORT,,[C_Validated GP Target],
+350,aSD_REPORT,,"(case when [D 30 GP Contract BMC] is null then 0
+else [D 30 GP Contract BMC]
+end)+
+(case when [G 30 Moonlight GP BMC] is null then 0
+else [G 30 Moonlight GP BMC]
+end)
+
+
+",
+351,aSD_REPORT,,[C&D&F].[D 30 GP Contract BMC],
+352,aSD_REPORT,,[C&D&F].[D 30 GP BMC 3Q],
+353,aSD_REPORT,,[C&D&F].[D 30 GP BMC 4Q],
+354,aSD_REPORT,,[E1&E2&G].[G TOTAL GP Quota - Moonlight],
+355,aSD_REPORT,,[C&D&F].[F IS 30/46 Total Signings],
+356,aSD_REPORT,,[C&D&F].[F IS 30/46 LT10 Signings],
+357,aSD_REPORT,,[C&D&F].[F Div 30 GT10 Signings],
+358,aSD_REPORT,,[C&D&F].[F Div 46 GT10 Signings],
+359,aSD_REPORT,,"(case when [E1 30 Total 6 mo XaaS] is null then 0
+else [E1 30 Total 6 mo XaaS]
+end)+
+(case when [E2 46 Total 6 mo XaaS] is null then 0
+else [E2 46 Total 6 mo XaaS]
+end)
++
+(case when [G 30 Moonlight XaaS] is null then 0
+else [G 30 Moonlight XaaS]
+end)",
+360,aSD_REPORT,,[E1&E2&G].[E1 30 Total 6 mo XaaS],
+361,aSD_REPORT,,[E2 TOTAL_6_MO_XAAS],
+362,aSD_REPORT,,[E1&E2&G].[G TOTAL REV Quota - Moonlight],
+363,aSD_REPORT,,[C&D&F].[C_Validated Rev Target],
+364,aSD_REPORT,,[C&D&F].[C_Validated GP Target],
+365,aSD_REPORT,,[E1&E2&G].[E1 30 Total 12 mo XaaS],
+366,aSD_REPORT,,[E1&E2&G].[E2 TOTAL_6_MO_XAAS],
+367,aSD_REPORT,,[E1&E2&G].[E2 TOTAL_12_MO_XAAS],
+368,aSD_REPORT,,[E1&E2&G].[G TOTAL REV Quota - Moonlight],
+369,aSD_REPORT,,[E1&E2&G].[G TOTAL GP Quota - Moonlight],
+370,aSD_REPORT,,"replace(substr([Business View].[QUOTA_KEYSTONE_T_MAIN].[MARKET_NAME],4),'/CSI','')
+",
+371,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[TERRITORY_TYPE],
+372,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COVERAGE_ID_NAME],
+373,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COV_ID],
+374,aSD_REPORT,,"'unknown'
+",
+375,aSD_REPORT,,'unknown',
+376,aSD_REPORT,,'unknown',
+377,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COV_ID],
+378,aSD_REPORT,,"case when 
+[KEYSTONE].[Market Name] is null then 'unknown'
+else  [KEYSTONE].[Market Name]
+end",
+379,aSD_REPORT,,"case when  [KEYSTONE].[Customer Set] is null
+then 'unknown'
+else  [KEYSTONE].[Customer Set]
+end",
+380,aSD_REPORT,,"case when [KEYSTONE].[Coverage ID Name] is null
+then 'unknown'
+else [KEYSTONE].[Coverage ID Name]
+end",
+381,aSD_REPORT,,"COALESCE([C&D&E1&E2&F&G].[COV_ID],[KEYSTONE].[Cov Id])",
+382,aSD_REPORT,,"case 
+when [Cov ID1] in ('912_CFCNLEA','912_CFLOAC','912_CFCOMEA')
+then 'C000000'
+when [Cov ID1] in ('912_CFDSNLE','912_CFDISWE','912_CFLOAD')
+then 'D000000'
+when [Cov ID1] in ('912_CFBNKEA','912_CFFNMEA','912_CFFSSEA','912_CFLOAF','912_CFINSWE')
+then 'F000000'
+when [Cov ID1] in ('912_CFLOAI')
+then 'I000000'
+when [Cov ID1] in ('912_CFLOAP')
+then 'P000000'
+else  [Cov ID1]
+end",
+383,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G&C 30 Revenue],
+384,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G 30 Revenue],
+385,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight Rev],
+386,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue],
+387,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue 3Q],
+388,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue 4Q],
+389,aSD_REPORT,,[C&D&E1&E2&F&G].[C 46 Revenue],
+390,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G&C BCP GP],
+391,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP Contract BCP],
+392,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BCP 3Q],
+393,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BCP 4Q],
+394,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight GP BCP],
+395,aSD_REPORT,,[C&D&E1&E2&F&G].[C 46 Validated GP Target],
+396,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G BMC GP],
+397,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP Contract BMC],
+398,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BMC 3Q],
+399,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BMC 4Q],
+400,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight GP BMC],
+401,aSD_REPORT,,[C&D&E1&E2&F&G].[F IS 30/46 Total Signings],
+402,aSD_REPORT,,[C&D&E1&E2&F&G].[F IS 30/46 LT10 Signings],
+403,aSD_REPORT,,[C&D&E1&E2&F&G].[F Div 30 GT10 Signings],
+404,aSD_REPORT,,[C&D&E1&E2&F&G].[F Div 46 GT10 Signings],
+405,aSD_REPORT,,[C&D&E1&E2&F&G].[E XaaS],
+406,aSD_REPORT,,[C&D&E1&E2&F&G].[E1 30 Total 6 mo XaaS],
+407,aSD_REPORT,,[C&D&E1&E2&F&G].[E2 46 Total 6 mo XaaS],
+408,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight XaaS],
+409,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then 'Communication'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then 'Distribution'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then 'Financial Service'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then 'Industrial'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then 'Public'
+else [Main0].[Market Name]
+end",
+410,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] IN ('C000000','D000000','F000000','I000000','P000000') then 'unknown'
+else [Main0].[Customer Set]
+end",
+411,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then '_COMMUNICATIONS PLUG'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then '_DISTRIBUTION PLUG'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then '_FINANCIAL SERVICES PLUG'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then '_INDUSTRIAL PLUG'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then '_PUBLIC PLUG'
+else [Main0].[Coverage ID Name]
+end",
+412,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then 'C000000'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then 'D000000'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then 'F000000'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then 'I000000'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then 'P000000'
+else [Main0].[Cov ID1]
+end",
+413,aSD_REPORT,,[Main0].[D&G&C 30 Revenue],
+414,aSD_REPORT,,[Main0].[D&G 30 Revenue],
+415,aSD_REPORT,,[Main0].[G 30 Moonlight Rev],
+416,aSD_REPORT,,[Main0].[D 30 Revenue],
+417,aSD_REPORT,,[Main0].[D 30 Revenue 3Q],
+418,aSD_REPORT,,[Main0].[D 30 Revenue 4Q],
+419,aSD_REPORT,,[Main0].[C 46 Revenue],
+420,aSD_REPORT,,[Main0].[D&G&C BCP GP],
+421,aSD_REPORT,,[Main0].[D 30 GP Contract BCP],
+422,aSD_REPORT,,[Main0].[D 30 GP BCP 3Q],
+423,aSD_REPORT,,[Main0].[D 30 GP BCP 4Q],
+424,aSD_REPORT,,[Main0].[G 30 Moonlight GP BCP],
+425,aSD_REPORT,,[Main0].[C 46 Validated GP Target],
+426,aSD_REPORT,,[Main0].[D&G BMC GP],
+427,aSD_REPORT,,[Main0].[D 30 GP Contract BMC],
+428,aSD_REPORT,,[Main0].[D 30 GP BMC 3Q],
+429,aSD_REPORT,,[Main0].[D 30 GP BMC 4Q],
+430,aSD_REPORT,,[Main0].[G 30 Moonlight GP BMC],
+431,aSD_REPORT,,[Main0].[F IS 30/46 Total Signings],
+432,aSD_REPORT,,[Main0].[F IS 30/46 LT10 Signings],
+433,aSD_REPORT,,[Main0].[F Div 30 GT10 Signings],
+434,aSD_REPORT,,[Main0].[F Div 46 GT10 Signings],
+435,aSD_REPORT,,[Main0].[E XaaS],
+436,aSD_REPORT,,[Main0].[E1 30 Total 6 mo XaaS],
+437,aSD_REPORT,,[Main0].[E2 46 Total 6 mo XaaS],
+438,aSD_REPORT,,[Main0].[G 30 Moonlight XaaS],
+439,aSD_REPORT,,[Main].[Market Name],
+440,aSD_REPORT,,[Main].[Customer Set],
+441,aSD_REPORT,,[Main].[Coverage ID Name],
+442,aSD_REPORT,,[Main].[Cov ID],
+443,aSD_REPORT,,"case
+when [Main].[D&G&C 30 Revenue] is null then 0 
+else [Main].[D&G&C 30 Revenue]
+end",
+444,aSD_REPORT,,"case
+when [Main].[D&G 30 Revenue] is null then 0 
+else [Main].[D&G 30 Revenue]
+end",
+445,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight Rev] is null then 0 
+else [Main].[G 30 Moonlight Rev]
+end",
+446,aSD_REPORT,,"case
+when [Main].[D 30 Revenue] is null then 0
+else [Main].[D 30 Revenue]
+end",
+447,aSD_REPORT,,"case
+when [Main].[D 30 Revenue 3Q] is null then 0 
+else [Main].[D 30 Revenue 3Q]
+end",
+448,aSD_REPORT,,"case
+when [Main].[D 30 Revenue 4Q] is null then 0
+else [Main].[D 30 Revenue 4Q]
+end",
+449,aSD_REPORT,,"case
+when [Main].[C 46 Revenue] is null then 0
+else [Main].[C 46 Revenue]
+end",
+450,aSD_REPORT,,"case
+when [Main].[D&G&C BCP GP] is null then 0
+else [Main].[D&G&C BCP GP]
+end",
+451,aSD_REPORT,,"case
+when [Main].[D 30 GP Contract BCP] is null then 0
+else [Main].[D 30 GP Contract BCP]
+end",
+452,aSD_REPORT,,"case
+when [Main].[D 30 GP BCP 3Q] is null then 0
+else [Main].[D 30 GP BCP 3Q]
+end",
+453,aSD_REPORT,,"case
+when [Main].[D 30 GP BCP 4Q] is null then 0
+else [Main].[D 30 GP BCP 4Q]
+end",
+454,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight GP BCP] is null then 0
+else [Main].[G 30 Moonlight GP BCP]
+end",
+455,aSD_REPORT,,"case
+when [Main].[C 46 Validated GP Target] is null then 0
+else [Main].[C 46 Validated GP Target]
+end",
+456,aSD_REPORT,,"case
+when [Main].[D&G BMC GP] is null then 0
+else [Main].[D&G BMC GP]
+end",
+457,aSD_REPORT,,"case
+when [Main].[D 30 GP Contract BMC] is null then 0
+else [Main].[D 30 GP Contract BMC]
+end",
+458,aSD_REPORT,,"case
+when [Main].[D 30 GP BMC 3Q] is null then 0
+else [Main].[D 30 GP BMC 3Q]
+end",
+459,aSD_REPORT,,"case
+when [Main].[D 30 GP BMC 4Q] is null then 0
+else [Main].[D 30 GP BMC 4Q]
+end",
+460,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight GP BMC] is null then 0 
+else [Main].[G 30 Moonlight GP BMC]
+end",
+461,aSD_REPORT,,"case
+when [Main].[F IS 30/46 Total Signings] is null then 0
+else [Main].[F IS 30/46 Total Signings]
+end",
+462,aSD_REPORT,,"case
+when [Main].[F IS 30/46 LT10 Signings] is null then 0
+else [Main].[F IS 30/46 LT10 Signings]
+end",
+463,aSD_REPORT,,"case
+when [Main].[F Div 30 GT10 Signings] is null then 0
+else [Main].[F Div 30 GT10 Signings]
+end",
+464,aSD_REPORT,,"case
+when [Main].[F Div 46 GT10 Signings] is null then 0
+else [Main].[F Div 46 GT10 Signings]
+end",
+465,aSD_REPORT,,"case
+when [Main].[E XaaS] is null then 0
+else [Main].[E XaaS]
+end",
+466,aSD_REPORT,,"case
+when [Main].[E1 30 Total 6 mo XaaS] is null then 0
+else [Main].[E1 30 Total 6 mo XaaS]
+end",
+467,aSD_REPORT,,"case
+when [Main].[E2 46 Total 6 mo XaaS] is null then 0
+else [Main].[E2 46 Total 6 mo XaaS]
+end",
+468,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight XaaS] is null then 0
+else [Main].[G 30 Moonlight XaaS]
+end",
+469,aSD_REPORT,,[Main].[Market Name],
+470,aSD_REPORT,,[Main].[Customer Set],
+471,aSD_REPORT,,[Main].[Coverage ID Name],
+472,aSD_REPORT,,[Main].[Cov ID],
+473,aSD_REPORT,,[Main2].[Market Name],
+474,aSD_REPORT,,[Main2].[Customer Set],
+475,aSD_REPORT,/content/folder[@name='Quota Folder']/package[@name='S&D Package']/model[@name='2017-06-22T08:47:18.794Z'],,
+476,aSD_REPORT,,,[AFFILIATE_NUMBER] = 'F000000'
+477,aSD_REPORT,,,[Business View].[C_TABLE].[PERIOD]='2H'
+478,aSD_REPORT,,,[Business View].[C_TABLE].[BRAND]='IS - ITS'
+479,aSD_REPORT,,,[COV_ID] IS NOT NULL
+480,aSD_REPORT,,,[C].[COV_ID] = [D].[COV_ID]
+481,aSD_REPORT,,,[C&D].[COV_ID] = [F].[COV_ID]
+482,aSD_REPORT,,,[E1].[COV_ID] = [E2].[COV_ID]
+483,aSD_REPORT,,,[E1&E2].[COV_ID] = [G].[COV_ID]
+484,aSD_REPORT,,,[C&D&F].[COV_ID] = [E1&E2&G].[COV_ID]
+485,aSD_REPORT,,,[C&D&E1&E2&F&G].[COV_ID] = [KEYSTONE].[Cov Id]
+486,aSD_REPORT,,,[Cov ID] in ?CovID?
+487,aSD_REPORT,,,[Main0].[Cov ID1] = [B].[CONTRACTS]
+488,aSD_REPORT,,,[Market Name] in ?Market?
+489,aSD_REPORT,,,[Customer Set] in ?CustomerSet?
+490,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[CONTACT_IOT],
+491,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[CONTACT_SECTOR_NAME],
+492,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[CONTACT_ACCOUNT_NAME],
+493,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[MTAS_ACCOUNT_NAME],
+494,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[CYCLE_DATE],
+495,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[ACTIVE_STATUS],
+496,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[LAST_UPDATE_TS],
+497,aSD_REPORT,/content/folder[@name='NA']/folder[@name='GTS Metrics Project']/folder[@name='Packages']/folder[@name='Framework Package']/package[@name='FPK_GTSM']/model[@name='2017-06-09T10:06:57.109Z'],,
+498,aSD_REPORT,,,[MTAS_ACCOUNT_NAME] is not null
+499,aSD_REPORT,,,[ACTIVE_STATUS] = 'A'
+500,aSD_REPORT,,[Business View].[B_TABLE].[CONTRACTS],
+501,aSD_REPORT,,[Business View].[B_TABLE].[AFFILIATE_NUMBER],
+502,aSD_REPORT,,[Business View].[C_TABLE].[COVERAGE_ID],
+503,aSD_REPORT,,[Business View].[C_TABLE].[Validated Rev Target],
+504,aSD_REPORT,,[Business View].[C_TABLE].[Validated GP Target],
+505,aSD_REPORT,,"case when [Business View].[D_TABLE].[COV_ID] is null
+then [Business View].[D_TABLE].[CONTRACTS]
+else [Business View].[D_TABLE].[COV_ID]
+end",
+506,aSD_REPORT,,[Business View].[D_TABLE].[30 Revenue Majors],
+507,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - Rev Majors],
+508,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - Rev Majors],
+509,aSD_REPORT,,[Business View].[D_TABLE].[30 GP BCP],
+510,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - GP BCP],
+511,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - GP BCP],
+512,aSD_REPORT,,[Business View].[D_TABLE].[30 GP BMC],
+513,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - GP BMC],
+514,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - GP BMC],
+515,aSD_REPORT,,"case when 
+[Business View].[E1_TABLE].[COV_ID] is null
+then [Business View].[E1_TABLE].[CONTRACTS]
+else [Business View].[E1_TABLE].[COV_ID]
+end",
+516,aSD_REPORT,,[Business View].[E1_TABLE].[30 Total 6 mo XaaS],
+517,aSD_REPORT,,[Business View].[E1_TABLE].[30 Total 12 mo XaaS],
+518,aSD_REPORT,,[Business View].[E2_TABLE].[COV_ID],
+519,aSD_REPORT,,[Business View].[E2_TABLE].[TOTAL_6_MO_XAAS],
+520,aSD_REPORT,,[Business View].[E2_TABLE].[TOTAL_12_MO_XAAS],
+521,aSD_REPORT,,[Business View].[F_TABLE].[COVERAGE_ID],
+522,aSD_REPORT,,"
+[Business View].[F_TABLE].[IS_30_SLASH_46_LT10]",
+523,aSD_REPORT,,[Business View].[F_TABLE].[DIV_46_GT10],
+524,aSD_REPORT,,[Business View].[F_TABLE].[DIV_30_GT10],
+525,aSD_REPORT,,[Business View].[F_TABLE].[IS_DIV_30_SLASH_46_TOTAL],
+526,aSD_REPORT,,[Business View].[F_TABLE].[DIV_30_LT10],
+527,aSD_REPORT,,[Business View].[G_TABLE].[Cov Id],
+528,aSD_REPORT,,[Business View].[G_TABLE].[TOTAL REV Quota - Moonlight],
+529,aSD_REPORT,,[Business View].[G_TABLE].[TOTAL GP Quota - Moonlight],
+530,aSD_REPORT,,"COALESCE([C].[COV_ID],[D].[COV_ID])",
+531,aSD_REPORT,,[C].[C_Validated Rev Target],
+532,aSD_REPORT,,[C].[C_Validated GP Target],
+533,aSD_REPORT,,[D].[D 30 Revenue 3Q],
+534,aSD_REPORT,,[D].[D 30 Revenue 4Q],
+535,aSD_REPORT,,[D].[D 30 Revenue],
+536,aSD_REPORT,,[D].[D 30 GP BCP 3Q],
+537,aSD_REPORT,,[D].[D 30 GP BCP 4Q],
+538,aSD_REPORT,,[D].[D 30 GP Contract BCP],
+539,aSD_REPORT,,[D].[D 30 GP BMC 3Q],
+540,aSD_REPORT,,[D].[D 30 GP BMC 4Q],
+541,aSD_REPORT,,[D].[D 30 GP Contract BMC],
+542,aSD_REPORT,,"COALESCE([C&D].[COV_ID],[F].[COV_ID])
+",
+543,aSD_REPORT,,[C&D].[C_Validated Rev Target],
+544,aSD_REPORT,,[C&D].[C_Validated GP Target],
+545,aSD_REPORT,,[C&D].[D 30 Revenue 3Q],
+546,aSD_REPORT,,[C&D].[D 30 Revenue 4Q],
+547,aSD_REPORT,,[C&D].[D 30 Revenue],
+548,aSD_REPORT,,[C&D].[D 30 GP BCP 3Q],
+549,aSD_REPORT,,[C&D].[D 30 GP BCP 4Q],
+550,aSD_REPORT,,[C&D].[D 30 GP Contract BCP],
+551,aSD_REPORT,,[C&D].[D 30 GP BMC 3Q],
+552,aSD_REPORT,,[C&D].[D 30 GP BMC 4Q],
+553,aSD_REPORT,,[C&D].[D 30 GP Contract BMC],
+554,aSD_REPORT,,[F].[F IS 30/46 Total Signings],
+555,aSD_REPORT,,[F].[F IS 30/46 LT10 Signings],
+556,aSD_REPORT,,[F].[F Div 30 GT10 Signings],
+557,aSD_REPORT,,[F].[F Div 46 GT10 Signings],
+558,aSD_REPORT,,"COALESCE([E1].[COV_ID],[E2].[COV_ID])
+",
+559,aSD_REPORT,,[E1].[30 Total 6 mo XaaS],
+560,aSD_REPORT,,[E1].[30 Total 12 mo XaaS],
+561,aSD_REPORT,,[E2].[TOTAL_6_MO_XAAS],
+562,aSD_REPORT,,[E2].[TOTAL_12_MO_XAAS],
+563,aSD_REPORT,,"COALESCE([E1&E2].[COV_ID],[G].[COV_ID])
+",
+564,aSD_REPORT,,[E1&E2].[E1 30 Total 6 mo XaaS],
+565,aSD_REPORT,,[E1&E2].[E1 30 Total 12 mo XaaS],
+566,aSD_REPORT,,[E1&E2].[E2 TOTAL_6_MO_XAAS],
+567,aSD_REPORT,,[E1&E2].[E2 TOTAL_12_MO_XAAS],
+568,aSD_REPORT,,[G].[TOTAL REV Quota - Moonlight],
+569,aSD_REPORT,,[G].[TOTAL GP Quota - Moonlight],
+570,aSD_REPORT,,"COALESCE([C&D&F].[COV_ID],[E1&E2&G].[COV_ID])
+",
+571,aSD_REPORT,,"(case when [D&G 30 Revenue] is null then 0
+else [D&G 30 Revenue]
+end)+
+(case when[C 46 Revenue] is null then 0
+else [C 46 Revenue]
+end)
+
+",
+572,aSD_REPORT,,"(case when [D 30 Revenue] is null then 0
+else [D 30 Revenue]
+end)+
+(case when [G 30 Moonlight Rev] is null then 0
+else [G 30 Moonlight Rev]
+end)
+",
+573,aSD_REPORT,,[G TOTAL REV Quota - Moonlight],
+574,aSD_REPORT,,[C&D&F].[D 30 Revenue],
+575,aSD_REPORT,,[C&D&F].[D 30 Revenue 3Q],
+576,aSD_REPORT,,[C&D&F].[D 30 Revenue 4Q],
+577,aSD_REPORT,,[C_Validated Rev Target],
+578,aSD_REPORT,,"(case when [D 30 GP Contract BCP] is null then 0
+else [D 30 GP Contract BCP]
+end)+
+(case when [G 30 Moonlight GP BCP] is null then 0
+else [G 30 Moonlight GP BCP]
+end)
++
+(case when [C 46 Validated GP Target] is null then 0
+else [C 46 Validated GP Target]
+end)
+",
+579,aSD_REPORT,,[C&D&F].[D 30 GP Contract BCP],
+580,aSD_REPORT,,[C&D&F].[D 30 GP BCP 3Q],
+581,aSD_REPORT,,[C&D&F].[D 30 GP BCP 4Q],
+582,aSD_REPORT,,[G TOTAL GP Quota - Moonlight],
+583,aSD_REPORT,,[C_Validated GP Target],
+584,aSD_REPORT,,"(case when [D 30 GP Contract BMC] is null then 0
+else [D 30 GP Contract BMC]
+end)+
+(case when [G 30 Moonlight GP BMC] is null then 0
+else [G 30 Moonlight GP BMC]
+end)
+
+
+",
+585,aSD_REPORT,,[C&D&F].[D 30 GP Contract BMC],
+586,aSD_REPORT,,[C&D&F].[D 30 GP BMC 3Q],
+587,aSD_REPORT,,[C&D&F].[D 30 GP BMC 4Q],
+588,aSD_REPORT,,[E1&E2&G].[G TOTAL GP Quota - Moonlight],
+589,aSD_REPORT,,[C&D&F].[F IS 30/46 Total Signings],
+590,aSD_REPORT,,[C&D&F].[F IS 30/46 LT10 Signings],
+591,aSD_REPORT,,[C&D&F].[F Div 30 GT10 Signings],
+592,aSD_REPORT,,[C&D&F].[F Div 46 GT10 Signings],
+593,aSD_REPORT,,"(case when [E1 30 Total 6 mo XaaS] is null then 0
+else [E1 30 Total 6 mo XaaS]
+end)+
+(case when [E2 46 Total 6 mo XaaS] is null then 0
+else [E2 46 Total 6 mo XaaS]
+end)
++
+(case when [G 30 Moonlight XaaS] is null then 0
+else [G 30 Moonlight XaaS]
+end)",
+594,aSD_REPORT,,[E1&E2&G].[E1 30 Total 6 mo XaaS],
+595,aSD_REPORT,,[E2 TOTAL_6_MO_XAAS],
+596,aSD_REPORT,,[E1&E2&G].[G TOTAL REV Quota - Moonlight],
+597,aSD_REPORT,,[C&D&F].[C_Validated Rev Target],
+598,aSD_REPORT,,[C&D&F].[C_Validated GP Target],
+599,aSD_REPORT,,[E1&E2&G].[E1 30 Total 12 mo XaaS],
+600,aSD_REPORT,,[E1&E2&G].[E2 TOTAL_6_MO_XAAS],
+601,aSD_REPORT,,[E1&E2&G].[E2 TOTAL_12_MO_XAAS],
+602,aSD_REPORT,,[E1&E2&G].[G TOTAL REV Quota - Moonlight],
+603,aSD_REPORT,,[E1&E2&G].[G TOTAL GP Quota - Moonlight],
+604,aSD_REPORT,,"replace(substr([Business View].[QUOTA_KEYSTONE_T_MAIN].[MARKET_NAME],4),'/CSI','')
+",
+605,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[TERRITORY_TYPE],
+606,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COVERAGE_ID_NAME],
+607,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COV_ID],
+608,aSD_REPORT,,"'unknown'
+",
+609,aSD_REPORT,,'unknown',
+610,aSD_REPORT,,'unknown',
+611,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COV_ID],
+612,aSD_REPORT,,"case when 
+[KEYSTONE].[Market Name] is null then 'unknown'
+else  [KEYSTONE].[Market Name]
+end",
+613,aSD_REPORT,,"case when  [KEYSTONE].[Customer Set] is null
+then 'unknown'
+else  [KEYSTONE].[Customer Set]
+end",
+614,aSD_REPORT,,"case when [KEYSTONE].[Coverage ID Name] is null
+then 'unknown'
+else [KEYSTONE].[Coverage ID Name]
+end",
+615,aSD_REPORT,,"COALESCE([C&D&E1&E2&F&G].[COV_ID],[KEYSTONE].[Cov Id])",
+616,aSD_REPORT,,"case 
+when [Cov ID1] in ('912_CFCNLEA','912_CFLOAC','912_CFCOMEA')
+then 'C000000'
+when [Cov ID1] in ('912_CFDSNLE','912_CFDISWE','912_CFLOAD')
+then 'D000000'
+when [Cov ID1] in ('912_CFBNKEA','912_CFFNMEA','912_CFFSSEA','912_CFLOAF','912_CFINSWE')
+then 'F000000'
+when [Cov ID1] in ('912_CFLOAI')
+then 'I000000'
+when [Cov ID1] in ('912_CFLOAP')
+then 'P000000'
+else  [Cov ID1]
+end",
+617,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G&C 30 Revenue],
+618,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G 30 Revenue],
+619,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight Rev],
+620,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue],
+621,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue 3Q],
+622,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue 4Q],
+623,aSD_REPORT,,[C&D&E1&E2&F&G].[C 46 Revenue],
+624,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G&C BCP GP],
+625,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP Contract BCP],
+626,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BCP 3Q],
+627,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BCP 4Q],
+628,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight GP BCP],
+629,aSD_REPORT,,[C&D&E1&E2&F&G].[C 46 Validated GP Target],
+630,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G BMC GP],
+631,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP Contract BMC],
+632,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BMC 3Q],
+633,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BMC 4Q],
+634,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight GP BMC],
+635,aSD_REPORT,,[C&D&E1&E2&F&G].[F IS 30/46 Total Signings],
+636,aSD_REPORT,,[C&D&E1&E2&F&G].[F IS 30/46 LT10 Signings],
+637,aSD_REPORT,,[C&D&E1&E2&F&G].[F Div 30 GT10 Signings],
+638,aSD_REPORT,,[C&D&E1&E2&F&G].[F Div 46 GT10 Signings],
+639,aSD_REPORT,,[C&D&E1&E2&F&G].[E XaaS],
+640,aSD_REPORT,,[C&D&E1&E2&F&G].[E1 30 Total 6 mo XaaS],
+641,aSD_REPORT,,[C&D&E1&E2&F&G].[E2 46 Total 6 mo XaaS],
+642,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight XaaS],
+643,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then 'Communication'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then 'Distribution'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then 'Financial Service'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then 'Industrial'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then 'Public'
+else [Main0].[Market Name]
+end",
+644,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] IN ('C000000','D000000','F000000','I000000','P000000') then 'unknown'
+else [Main0].[Customer Set]
+end",
+645,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then '_COMMUNICATIONS PLUG'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then '_DISTRIBUTION PLUG'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then '_FINANCIAL SERVICES PLUG'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then '_INDUSTRIAL PLUG'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then '_PUBLIC PLUG'
+else [Main0].[Coverage ID Name]
+end",
+646,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then 'C000000'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then 'D000000'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then 'F000000'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then 'I000000'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then 'P000000'
+else [Main0].[Cov ID1]
+end",
+647,aSD_REPORT,,[Main0].[D&G&C 30 Revenue],
+648,aSD_REPORT,,[Main0].[D&G 30 Revenue],
+649,aSD_REPORT,,[Main0].[G 30 Moonlight Rev],
+650,aSD_REPORT,,[Main0].[D 30 Revenue],
+651,aSD_REPORT,,[Main0].[D 30 Revenue 3Q],
+652,aSD_REPORT,,[Main0].[D 30 Revenue 4Q],
+653,aSD_REPORT,,[Main0].[C 46 Revenue],
+654,aSD_REPORT,,[Main0].[D&G&C BCP GP],
+655,aSD_REPORT,,[Main0].[D 30 GP Contract BCP],
+656,aSD_REPORT,,[Main0].[D 30 GP BCP 3Q],
+657,aSD_REPORT,,[Main0].[D 30 GP BCP 4Q],
+658,aSD_REPORT,,[Main0].[G 30 Moonlight GP BCP],
+659,aSD_REPORT,,[Main0].[C 46 Validated GP Target],
+660,aSD_REPORT,,[Main0].[D&G BMC GP],
+661,aSD_REPORT,,[Main0].[D 30 GP Contract BMC],
+662,aSD_REPORT,,[Main0].[D 30 GP BMC 3Q],
+663,aSD_REPORT,,[Main0].[D 30 GP BMC 4Q],
+664,aSD_REPORT,,[Main0].[G 30 Moonlight GP BMC],
+665,aSD_REPORT,,[Main0].[F IS 30/46 Total Signings],
+666,aSD_REPORT,,[Main0].[F IS 30/46 LT10 Signings],
+667,aSD_REPORT,,[Main0].[F Div 30 GT10 Signings],
+668,aSD_REPORT,,[Main0].[F Div 46 GT10 Signings],
+669,aSD_REPORT,,[Main0].[E XaaS],
+670,aSD_REPORT,,[Main0].[E1 30 Total 6 mo XaaS],
+671,aSD_REPORT,,[Main0].[E2 46 Total 6 mo XaaS],
+672,aSD_REPORT,,[Main0].[G 30 Moonlight XaaS],
+673,aSD_REPORT,,[Main].[Market Name],
+674,aSD_REPORT,,[Main].[Customer Set],
+675,aSD_REPORT,,[Main].[Coverage ID Name],
+676,aSD_REPORT,,[Main].[Cov ID],
+677,aSD_REPORT,,"case
+when [Main].[D&G&C 30 Revenue] is null then 0 
+else [Main].[D&G&C 30 Revenue]
+end",
+678,aSD_REPORT,,"case
+when [Main].[D&G 30 Revenue] is null then 0 
+else [Main].[D&G 30 Revenue]
+end",
+679,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight Rev] is null then 0 
+else [Main].[G 30 Moonlight Rev]
+end",
+680,aSD_REPORT,,"case
+when [Main].[D 30 Revenue] is null then 0
+else [Main].[D 30 Revenue]
+end",
+681,aSD_REPORT,,"case
+when [Main].[D 30 Revenue 3Q] is null then 0 
+else [Main].[D 30 Revenue 3Q]
+end",
+682,aSD_REPORT,,"case
+when [Main].[D 30 Revenue 4Q] is null then 0
+else [Main].[D 30 Revenue 4Q]
+end",
+683,aSD_REPORT,,"case
+when [Main].[C 46 Revenue] is null then 0
+else [Main].[C 46 Revenue]
+end",
+684,aSD_REPORT,,"case
+when [Main].[D&G&C BCP GP] is null then 0
+else [Main].[D&G&C BCP GP]
+end",
+685,aSD_REPORT,,"case
+when [Main].[D 30 GP Contract BCP] is null then 0
+else [Main].[D 30 GP Contract BCP]
+end",
+686,aSD_REPORT,,"case
+when [Main].[D 30 GP BCP 3Q] is null then 0
+else [Main].[D 30 GP BCP 3Q]
+end",
+687,aSD_REPORT,,"case
+when [Main].[D 30 GP BCP 4Q] is null then 0
+else [Main].[D 30 GP BCP 4Q]
+end",
+688,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight GP BCP] is null then 0
+else [Main].[G 30 Moonlight GP BCP]
+end",
+689,aSD_REPORT,,"case
+when [Main].[C 46 Validated GP Target] is null then 0
+else [Main].[C 46 Validated GP Target]
+end",
+690,aSD_REPORT,,"case
+when [Main].[D&G BMC GP] is null then 0
+else [Main].[D&G BMC GP]
+end",
+691,aSD_REPORT,,"case
+when [Main].[D 30 GP Contract BMC] is null then 0
+else [Main].[D 30 GP Contract BMC]
+end",
+692,aSD_REPORT,,"case
+when [Main].[D 30 GP BMC 3Q] is null then 0
+else [Main].[D 30 GP BMC 3Q]
+end",
+693,aSD_REPORT,,"case
+when [Main].[D 30 GP BMC 4Q] is null then 0
+else [Main].[D 30 GP BMC 4Q]
+end",
+694,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight GP BMC] is null then 0 
+else [Main].[G 30 Moonlight GP BMC]
+end",
+695,aSD_REPORT,,"case
+when [Main].[F IS 30/46 Total Signings] is null then 0
+else [Main].[F IS 30/46 Total Signings]
+end",
+696,aSD_REPORT,,"case
+when [Main].[F IS 30/46 LT10 Signings] is null then 0
+else [Main].[F IS 30/46 LT10 Signings]
+end",
+697,aSD_REPORT,,"case
+when [Main].[F Div 30 GT10 Signings] is null then 0
+else [Main].[F Div 30 GT10 Signings]
+end",
+698,aSD_REPORT,,"case
+when [Main].[F Div 46 GT10 Signings] is null then 0
+else [Main].[F Div 46 GT10 Signings]
+end",
+699,aSD_REPORT,,"case
+when [Main].[E XaaS] is null then 0
+else [Main].[E XaaS]
+end",
+700,aSD_REPORT,,"case
+when [Main].[E1 30 Total 6 mo XaaS] is null then 0
+else [Main].[E1 30 Total 6 mo XaaS]
+end",
+701,aSD_REPORT,,"case
+when [Main].[E2 46 Total 6 mo XaaS] is null then 0
+else [Main].[E2 46 Total 6 mo XaaS]
+end",
+702,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight XaaS] is null then 0
+else [Main].[G 30 Moonlight XaaS]
+end",
+703,aSD_REPORT,,[Main].[Market Name],
+704,aSD_REPORT,,[Main].[Customer Set],
+705,aSD_REPORT,,[Main].[Coverage ID Name],
+706,aSD_REPORT,,[Main].[Cov ID],
+707,aSD_REPORT,,[Main2].[Market Name],
+708,aSD_REPORT,,[Main2].[Customer Set],
+709,aSD_REPORT,/content/folder[@name='Quota Folder']/package[@name='S&D Package']/model[@name='2017-06-22T08:47:18.794Z'],,
+710,aSD_REPORT,,,[AFFILIATE_NUMBER] = 'F000000'
+711,aSD_REPORT,,,[Business View].[C_TABLE].[PERIOD]='2H'
+712,aSD_REPORT,,,[Business View].[C_TABLE].[BRAND]='IS - ITS'
+713,aSD_REPORT,,,[COV_ID] IS NOT NULL
+714,aSD_REPORT,,,[C].[COV_ID] = [D].[COV_ID]
+715,aSD_REPORT,,,[C&D].[COV_ID] = [F].[COV_ID]
+716,aSD_REPORT,,,[E1].[COV_ID] = [E2].[COV_ID]
+717,aSD_REPORT,,,[E1&E2].[COV_ID] = [G].[COV_ID]
+718,aSD_REPORT,,,[C&D&F].[COV_ID] = [E1&E2&G].[COV_ID]
+719,aSD_REPORT,,,[C&D&E1&E2&F&G].[COV_ID] = [KEYSTONE].[Cov Id]
+720,aSD_REPORT,,,[Cov ID] in ?CovID?
+721,aSD_REPORT,,,[Main0].[Cov ID1] = [B].[CONTRACTS]
+722,aSD_REPORT,,,[Market Name] in ?Market?
+723,aSD_REPORT,,,[Customer Set] in ?CustomerSet?
+724,aSD_REPORT,,[Business View].[B_TABLE].[CONTRACTS],
+725,aSD_REPORT,,[Business View].[B_TABLE].[AFFILIATE_NUMBER],
+726,aSD_REPORT,,[Business View].[C_TABLE].[COVERAGE_ID],
+727,aSD_REPORT,,[Business View].[C_TABLE].[Validated Rev Target],
+728,aSD_REPORT,,[Business View].[C_TABLE].[Validated GP Target],
+729,aSD_REPORT,,"case when [Business View].[D_TABLE].[COV_ID] is null
+then [Business View].[D_TABLE].[CONTRACTS]
+else [Business View].[D_TABLE].[COV_ID]
+end",
+730,aSD_REPORT,,[Business View].[D_TABLE].[30 Revenue Majors],
+731,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - Rev Majors],
+732,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - Rev Majors],
+733,aSD_REPORT,,[Business View].[D_TABLE].[30 GP BCP],
+734,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - GP BCP],
+735,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - GP BCP],
+736,aSD_REPORT,,[Business View].[D_TABLE].[30 GP BMC],
+737,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - GP BMC],
+738,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - GP BMC],
+739,aSD_REPORT,,"case when 
+[Business View].[E1_TABLE].[COV_ID] is null
+then [Business View].[E1_TABLE].[CONTRACTS]
+else [Business View].[E1_TABLE].[COV_ID]
+end",
+740,aSD_REPORT,,[Business View].[E1_TABLE].[30 Total 6 mo XaaS],
+741,aSD_REPORT,,[Business View].[E1_TABLE].[30 Total 12 mo XaaS],
+742,aSD_REPORT,,[Business View].[E2_TABLE].[COV_ID],
+743,aSD_REPORT,,[Business View].[E2_TABLE].[TOTAL_6_MO_XAAS],
+744,aSD_REPORT,,[Business View].[E2_TABLE].[TOTAL_12_MO_XAAS],
+745,aSD_REPORT,,[Business View].[F_TABLE].[COVERAGE_ID],
+746,aSD_REPORT,,"
+[Business View].[F_TABLE].[IS_30_SLASH_46_LT10]",
+747,aSD_REPORT,,[Business View].[F_TABLE].[DIV_46_GT10],
+748,aSD_REPORT,,[Business View].[F_TABLE].[DIV_30_GT10],
+749,aSD_REPORT,,[Business View].[F_TABLE].[IS_DIV_30_SLASH_46_TOTAL],
+750,aSD_REPORT,,[Business View].[F_TABLE].[DIV_30_LT10],
+751,aSD_REPORT,,[Business View].[G_TABLE].[Cov Id],
+752,aSD_REPORT,,[Business View].[G_TABLE].[TOTAL REV Quota - Moonlight],
+753,aSD_REPORT,,[Business View].[G_TABLE].[TOTAL GP Quota - Moonlight],
+754,aSD_REPORT,,"COALESCE([C].[COV_ID],[D].[COV_ID])",
+755,aSD_REPORT,,[C].[C_Validated Rev Target],
+756,aSD_REPORT,,[C].[C_Validated GP Target],
+757,aSD_REPORT,,[D].[D 30 Revenue 3Q],
+758,aSD_REPORT,,[D].[D 30 Revenue 4Q],
+759,aSD_REPORT,,[D].[D 30 Revenue],
+760,aSD_REPORT,,[D].[D 30 GP BCP 3Q],
+761,aSD_REPORT,,[D].[D 30 GP BCP 4Q],
+762,aSD_REPORT,,[D].[D 30 GP Contract BCP],
+763,aSD_REPORT,,[D].[D 30 GP BMC 3Q],
+764,aSD_REPORT,,[D].[D 30 GP BMC 4Q],
+765,aSD_REPORT,,[D].[D 30 GP Contract BMC],
+766,aSD_REPORT,,"COALESCE([C&D].[COV_ID],[F].[COV_ID])
+",
+767,aSD_REPORT,,[C&D].[C_Validated Rev Target],
+768,aSD_REPORT,,[C&D].[C_Validated GP Target],
+769,aSD_REPORT,,[C&D].[D 30 Revenue 3Q],
+770,aSD_REPORT,,[C&D].[D 30 Revenue 4Q],
+771,aSD_REPORT,,[C&D].[D 30 Revenue],
+772,aSD_REPORT,,[C&D].[D 30 GP BCP 3Q],
+773,aSD_REPORT,,[C&D].[D 30 GP BCP 4Q],
+774,aSD_REPORT,,[C&D].[D 30 GP Contract BCP],
+775,aSD_REPORT,,[C&D].[D 30 GP BMC 3Q],
+776,aSD_REPORT,,[C&D].[D 30 GP BMC 4Q],
+777,aSD_REPORT,,[C&D].[D 30 GP Contract BMC],
+778,aSD_REPORT,,[F].[F IS 30/46 Total Signings],
+779,aSD_REPORT,,[F].[F IS 30/46 LT10 Signings],
+780,aSD_REPORT,,[F].[F Div 30 GT10 Signings],
+781,aSD_REPORT,,[F].[F Div 46 GT10 Signings],
+782,aSD_REPORT,,"COALESCE([E1].[COV_ID],[E2].[COV_ID])
+",
+783,aSD_REPORT,,[E1].[30 Total 6 mo XaaS],
+784,aSD_REPORT,,[E1].[30 Total 12 mo XaaS],
+785,aSD_REPORT,,[E2].[TOTAL_6_MO_XAAS],
+786,aSD_REPORT,,[E2].[TOTAL_12_MO_XAAS],
+787,aSD_REPORT,,"COALESCE([E1&E2].[COV_ID],[G].[COV_ID])
+",
+788,aSD_REPORT,,[E1&E2].[E1 30 Total 6 mo XaaS],
+789,aSD_REPORT,,[E1&E2].[E1 30 Total 12 mo XaaS],
+790,aSD_REPORT,,[E1&E2].[E2 TOTAL_6_MO_XAAS],
+791,aSD_REPORT,,[E1&E2].[E2 TOTAL_12_MO_XAAS],
+792,aSD_REPORT,,[G].[TOTAL REV Quota - Moonlight],
+793,aSD_REPORT,,[G].[TOTAL GP Quota - Moonlight],
+794,aSD_REPORT,,"COALESCE([C&D&F].[COV_ID],[E1&E2&G].[COV_ID])
+",
+795,aSD_REPORT,,"(case when [D&G 30 Revenue] is null then 0
+else [D&G 30 Revenue]
+end)+
+(case when[C 46 Revenue] is null then 0
+else [C 46 Revenue]
+end)
+
+",
+796,aSD_REPORT,,"(case when [D 30 Revenue] is null then 0
+else [D 30 Revenue]
+end)+
+(case when [G 30 Moonlight Rev] is null then 0
+else [G 30 Moonlight Rev]
+end)
+",
+797,aSD_REPORT,,[G TOTAL REV Quota - Moonlight],
+798,aSD_REPORT,,[C&D&F].[D 30 Revenue],
+799,aSD_REPORT,,[C&D&F].[D 30 Revenue 3Q],
+800,aSD_REPORT,,[C&D&F].[D 30 Revenue 4Q],
+801,aSD_REPORT,,[C_Validated Rev Target],
+802,aSD_REPORT,,"(case when [D 30 GP Contract BCP] is null then 0
+else [D 30 GP Contract BCP]
+end)+
+(case when [G 30 Moonlight GP BCP] is null then 0
+else [G 30 Moonlight GP BCP]
+end)
++
+(case when [C 46 Validated GP Target] is null then 0
+else [C 46 Validated GP Target]
+end)
+",
+803,aSD_REPORT,,[C&D&F].[D 30 GP Contract BCP],
+804,aSD_REPORT,,[C&D&F].[D 30 GP BCP 3Q],
+805,aSD_REPORT,,[C&D&F].[D 30 GP BCP 4Q],
+806,aSD_REPORT,,[G TOTAL GP Quota - Moonlight],
+807,aSD_REPORT,,[C_Validated GP Target],
+808,aSD_REPORT,,"(case when [D 30 GP Contract BMC] is null then 0
+else [D 30 GP Contract BMC]
+end)+
+(case when [G 30 Moonlight GP BMC] is null then 0
+else [G 30 Moonlight GP BMC]
+end)
+
+
+",
+809,aSD_REPORT,,[C&D&F].[D 30 GP Contract BMC],
+810,aSD_REPORT,,[C&D&F].[D 30 GP BMC 3Q],
+811,aSD_REPORT,,[C&D&F].[D 30 GP BMC 4Q],
+812,aSD_REPORT,,[E1&E2&G].[G TOTAL GP Quota - Moonlight],
+813,aSD_REPORT,,[C&D&F].[F IS 30/46 Total Signings],
+814,aSD_REPORT,,[C&D&F].[F IS 30/46 LT10 Signings],
+815,aSD_REPORT,,[C&D&F].[F Div 30 GT10 Signings],
+816,aSD_REPORT,,[C&D&F].[F Div 46 GT10 Signings],
+817,aSD_REPORT,,"(case when [E1 30 Total 6 mo XaaS] is null then 0
+else [E1 30 Total 6 mo XaaS]
+end)+
+(case when [E2 46 Total 6 mo XaaS] is null then 0
+else [E2 46 Total 6 mo XaaS]
+end)
++
+(case when [G 30 Moonlight XaaS] is null then 0
+else [G 30 Moonlight XaaS]
+end)",
+818,aSD_REPORT,,[E1&E2&G].[E1 30 Total 6 mo XaaS],
+819,aSD_REPORT,,[E2 TOTAL_6_MO_XAAS],
+820,aSD_REPORT,,[E1&E2&G].[G TOTAL REV Quota - Moonlight],
+821,aSD_REPORT,,[C&D&F].[C_Validated Rev Target],
+822,aSD_REPORT,,[C&D&F].[C_Validated GP Target],
+823,aSD_REPORT,,[E1&E2&G].[E1 30 Total 12 mo XaaS],
+824,aSD_REPORT,,[E1&E2&G].[E2 TOTAL_6_MO_XAAS],
+825,aSD_REPORT,,[E1&E2&G].[E2 TOTAL_12_MO_XAAS],
+826,aSD_REPORT,,[E1&E2&G].[G TOTAL REV Quota - Moonlight],
+827,aSD_REPORT,,[E1&E2&G].[G TOTAL GP Quota - Moonlight],
+828,aSD_REPORT,,"replace(substr([Business View].[QUOTA_KEYSTONE_T_MAIN].[MARKET_NAME],4),'/CSI','')
+",
+829,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[TERRITORY_TYPE],
+830,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COVERAGE_ID_NAME],
+831,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COV_ID],
+832,aSD_REPORT,,"'unknown'
+",
+833,aSD_REPORT,,'unknown',
+834,aSD_REPORT,,'unknown',
+835,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COV_ID],
+836,aSD_REPORT,,"case when 
+[KEYSTONE].[Market Name] is null then 'unknown'
+else  [KEYSTONE].[Market Name]
+end",
+837,aSD_REPORT,,"case when  [KEYSTONE].[Customer Set] is null
+then 'unknown'
+else  [KEYSTONE].[Customer Set]
+end",
+838,aSD_REPORT,,"case when [KEYSTONE].[Coverage ID Name] is null
+then 'unknown'
+else [KEYSTONE].[Coverage ID Name]
+end",
+839,aSD_REPORT,,"COALESCE([C&D&E1&E2&F&G].[COV_ID],[KEYSTONE].[Cov Id])",
+840,aSD_REPORT,,"case 
+when [Cov ID1] in ('912_CFCNLEA','912_CFLOAC','912_CFCOMEA')
+then 'C000000'
+when [Cov ID1] in ('912_CFDSNLE','912_CFDISWE','912_CFLOAD')
+then 'D000000'
+when [Cov ID1] in ('912_CFBNKEA','912_CFFNMEA','912_CFFSSEA','912_CFLOAF','912_CFINSWE')
+then 'F000000'
+when [Cov ID1] in ('912_CFLOAI')
+then 'I000000'
+when [Cov ID1] in ('912_CFLOAP')
+then 'P000000'
+else  [Cov ID1]
+end",
+841,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G&C 30 Revenue],
+842,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G 30 Revenue],
+843,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight Rev],
+844,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue],
+845,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue 3Q],
+846,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue 4Q],
+847,aSD_REPORT,,[C&D&E1&E2&F&G].[C 46 Revenue],
+848,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G&C BCP GP],
+849,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP Contract BCP],
+850,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BCP 3Q],
+851,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BCP 4Q],
+852,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight GP BCP],
+853,aSD_REPORT,,[C&D&E1&E2&F&G].[C 46 Validated GP Target],
+854,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G BMC GP],
+855,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP Contract BMC],
+856,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BMC 3Q],
+857,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BMC 4Q],
+858,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight GP BMC],
+859,aSD_REPORT,,[C&D&E1&E2&F&G].[F IS 30/46 Total Signings],
+860,aSD_REPORT,,[C&D&E1&E2&F&G].[F IS 30/46 LT10 Signings],
+861,aSD_REPORT,,[C&D&E1&E2&F&G].[F Div 30 GT10 Signings],
+862,aSD_REPORT,,[C&D&E1&E2&F&G].[F Div 46 GT10 Signings],
+863,aSD_REPORT,,[C&D&E1&E2&F&G].[E XaaS],
+864,aSD_REPORT,,[C&D&E1&E2&F&G].[E1 30 Total 6 mo XaaS],
+865,aSD_REPORT,,[C&D&E1&E2&F&G].[E2 46 Total 6 mo XaaS],
+866,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight XaaS],
+867,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then 'Communication'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then 'Distribution'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then 'Financial Service'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then 'Industrial'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then 'Public'
+else [Main0].[Market Name]
+end",
+868,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] IN ('C000000','D000000','F000000','I000000','P000000') then 'unknown'
+else [Main0].[Customer Set]
+end",
+869,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then '_COMMUNICATIONS PLUG'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then '_DISTRIBUTION PLUG'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then '_FINANCIAL SERVICES PLUG'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then '_INDUSTRIAL PLUG'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then '_PUBLIC PLUG'
+else [Main0].[Coverage ID Name]
+end",
+870,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then 'C000000'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then 'D000000'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then 'F000000'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then 'I000000'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then 'P000000'
+else [Main0].[Cov ID1]
+end",
+871,aSD_REPORT,,[Main0].[D&G&C 30 Revenue],
+872,aSD_REPORT,,[Main0].[D&G 30 Revenue],
+873,aSD_REPORT,,[Main0].[G 30 Moonlight Rev],
+874,aSD_REPORT,,[Main0].[D 30 Revenue],
+875,aSD_REPORT,,[Main0].[D 30 Revenue 3Q],
+876,aSD_REPORT,,[Main0].[D 30 Revenue 4Q],
+877,aSD_REPORT,,[Main0].[C 46 Revenue],
+878,aSD_REPORT,,[Main0].[D&G&C BCP GP],
+879,aSD_REPORT,,[Main0].[D 30 GP Contract BCP],
+880,aSD_REPORT,,[Main0].[D 30 GP BCP 3Q],
+881,aSD_REPORT,,[Main0].[D 30 GP BCP 4Q],
+882,aSD_REPORT,,[Main0].[G 30 Moonlight GP BCP],
+883,aSD_REPORT,,[Main0].[C 46 Validated GP Target],
+884,aSD_REPORT,,[Main0].[D&G BMC GP],
+885,aSD_REPORT,,[Main0].[D 30 GP Contract BMC],
+886,aSD_REPORT,,[Main0].[D 30 GP BMC 3Q],
+887,aSD_REPORT,,[Main0].[D 30 GP BMC 4Q],
+888,aSD_REPORT,,[Main0].[G 30 Moonlight GP BMC],
+889,aSD_REPORT,,[Main0].[F IS 30/46 Total Signings],
+890,aSD_REPORT,,[Main0].[F IS 30/46 LT10 Signings],
+891,aSD_REPORT,,[Main0].[F Div 30 GT10 Signings],
+892,aSD_REPORT,,[Main0].[F Div 46 GT10 Signings],
+893,aSD_REPORT,,[Main0].[E XaaS],
+894,aSD_REPORT,,[Main0].[E1 30 Total 6 mo XaaS],
+895,aSD_REPORT,,[Main0].[E2 46 Total 6 mo XaaS],
+896,aSD_REPORT,,[Main0].[G 30 Moonlight XaaS],
+897,aSD_REPORT,,[Main].[Market Name],
+898,aSD_REPORT,,[Main].[Customer Set],
+899,aSD_REPORT,,[Main].[Coverage ID Name],
+900,aSD_REPORT,,[Main].[Cov ID],
+901,aSD_REPORT,,"case
+when [Main].[D&G&C 30 Revenue] is null then 0 
+else [Main].[D&G&C 30 Revenue]
+end",
+902,aSD_REPORT,,"case
+when [Main].[D&G 30 Revenue] is null then 0 
+else [Main].[D&G 30 Revenue]
+end",
+903,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight Rev] is null then 0 
+else [Main].[G 30 Moonlight Rev]
+end",
+904,aSD_REPORT,,"case
+when [Main].[D 30 Revenue] is null then 0
+else [Main].[D 30 Revenue]
+end",
+905,aSD_REPORT,,"case
+when [Main].[D 30 Revenue 3Q] is null then 0 
+else [Main].[D 30 Revenue 3Q]
+end",
+906,aSD_REPORT,,"case
+when [Main].[D 30 Revenue 4Q] is null then 0
+else [Main].[D 30 Revenue 4Q]
+end",
+907,aSD_REPORT,,"case
+when [Main].[C 46 Revenue] is null then 0
+else [Main].[C 46 Revenue]
+end",
+908,aSD_REPORT,,"case
+when [Main].[D&G&C BCP GP] is null then 0
+else [Main].[D&G&C BCP GP]
+end",
+909,aSD_REPORT,,"case
+when [Main].[D 30 GP Contract BCP] is null then 0
+else [Main].[D 30 GP Contract BCP]
+end",
+910,aSD_REPORT,,"case
+when [Main].[D 30 GP BCP 3Q] is null then 0
+else [Main].[D 30 GP BCP 3Q]
+end",
+911,aSD_REPORT,,"case
+when [Main].[D 30 GP BCP 4Q] is null then 0
+else [Main].[D 30 GP BCP 4Q]
+end",
+912,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight GP BCP] is null then 0
+else [Main].[G 30 Moonlight GP BCP]
+end",
+913,aSD_REPORT,,"case
+when [Main].[C 46 Validated GP Target] is null then 0
+else [Main].[C 46 Validated GP Target]
+end",
+914,aSD_REPORT,,"case
+when [Main].[D&G BMC GP] is null then 0
+else [Main].[D&G BMC GP]
+end",
+915,aSD_REPORT,,"case
+when [Main].[D 30 GP Contract BMC] is null then 0
+else [Main].[D 30 GP Contract BMC]
+end",
+916,aSD_REPORT,,"case
+when [Main].[D 30 GP BMC 3Q] is null then 0
+else [Main].[D 30 GP BMC 3Q]
+end",
+917,aSD_REPORT,,"case
+when [Main].[D 30 GP BMC 4Q] is null then 0
+else [Main].[D 30 GP BMC 4Q]
+end",
+918,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight GP BMC] is null then 0 
+else [Main].[G 30 Moonlight GP BMC]
+end",
+919,aSD_REPORT,,"case
+when [Main].[F IS 30/46 Total Signings] is null then 0
+else [Main].[F IS 30/46 Total Signings]
+end",
+920,aSD_REPORT,,"case
+when [Main].[F IS 30/46 LT10 Signings] is null then 0
+else [Main].[F IS 30/46 LT10 Signings]
+end",
+921,aSD_REPORT,,"case
+when [Main].[F Div 30 GT10 Signings] is null then 0
+else [Main].[F Div 30 GT10 Signings]
+end",
+922,aSD_REPORT,,"case
+when [Main].[F Div 46 GT10 Signings] is null then 0
+else [Main].[F Div 46 GT10 Signings]
+end",
+923,aSD_REPORT,,"case
+when [Main].[E XaaS] is null then 0
+else [Main].[E XaaS]
+end",
+924,aSD_REPORT,,"case
+when [Main].[E1 30 Total 6 mo XaaS] is null then 0
+else [Main].[E1 30 Total 6 mo XaaS]
+end",
+925,aSD_REPORT,,"case
+when [Main].[E2 46 Total 6 mo XaaS] is null then 0
+else [Main].[E2 46 Total 6 mo XaaS]
+end",
+926,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight XaaS] is null then 0
+else [Main].[G 30 Moonlight XaaS]
+end",
+927,aSD_REPORT,,[Main].[Market Name],
+928,aSD_REPORT,,[Main].[Customer Set],
+929,aSD_REPORT,,[Main].[Coverage ID Name],
+930,aSD_REPORT,,[Main].[Cov ID],
+931,aSD_REPORT,,[Main2].[Market Name],
+932,aSD_REPORT,,[Main2].[Customer Set],
+933,aSD_REPORT,/content/folder[@name='Quota Folder']/package[@name='S&D Package']/model[@name='2017-06-22T08:47:18.794Z'],,
+934,aSD_REPORT,,,[AFFILIATE_NUMBER] = 'F000000'
+935,aSD_REPORT,,,[Business View].[C_TABLE].[PERIOD]='2H'
+936,aSD_REPORT,,,[Business View].[C_TABLE].[BRAND]='IS - ITS'
+937,aSD_REPORT,,,[COV_ID] IS NOT NULL
+938,aSD_REPORT,,,[C].[COV_ID] = [D].[COV_ID]
+939,aSD_REPORT,,,[C&D].[COV_ID] = [F].[COV_ID]
+940,aSD_REPORT,,,[E1].[COV_ID] = [E2].[COV_ID]
+941,aSD_REPORT,,,[E1&E2].[COV_ID] = [G].[COV_ID]
+942,aSD_REPORT,,,[C&D&F].[COV_ID] = [E1&E2&G].[COV_ID]
+943,aSD_REPORT,,,[C&D&E1&E2&F&G].[COV_ID] = [KEYSTONE].[Cov Id]
+944,aSD_REPORT,,,[Cov ID] in ?CovID?
+945,aSD_REPORT,,,[Main0].[Cov ID1] = [B].[CONTRACTS]
+946,aSD_REPORT,,,[Market Name] in ?Market?
+947,aSD_REPORT,,,[Customer Set] in ?CustomerSet?
+948,aSD_REPORT,,[Business View].[B_TABLE].[CONTRACTS],
+949,aSD_REPORT,,[Business View].[B_TABLE].[AFFILIATE_NUMBER],
+950,aSD_REPORT,,[Business View].[C_TABLE].[COVERAGE_ID],
+951,aSD_REPORT,,[Business View].[C_TABLE].[Validated Rev Target],
+952,aSD_REPORT,,[Business View].[C_TABLE].[Validated GP Target],
+953,aSD_REPORT,,"case when [Business View].[D_TABLE].[COV_ID] is null
+then [Business View].[D_TABLE].[CONTRACTS]
+else [Business View].[D_TABLE].[COV_ID]
+end",
+954,aSD_REPORT,,[Business View].[D_TABLE].[30 Revenue Majors],
+955,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - Rev Majors],
+956,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - Rev Majors],
+957,aSD_REPORT,,[Business View].[D_TABLE].[30 GP BCP],
+958,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - GP BCP],
+959,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - GP BCP],
+960,aSD_REPORT,,[Business View].[D_TABLE].[30 GP BMC],
+961,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - GP BMC],
+962,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - GP BMC],
+963,aSD_REPORT,,"case when 
+[Business View].[E1_TABLE].[COV_ID] is null
+then [Business View].[E1_TABLE].[CONTRACTS]
+else [Business View].[E1_TABLE].[COV_ID]
+end",
+964,aSD_REPORT,,[Business View].[E1_TABLE].[30 Total 6 mo XaaS],
+965,aSD_REPORT,,[Business View].[E1_TABLE].[30 Total 12 mo XaaS],
+966,aSD_REPORT,,[Business View].[E2_TABLE].[COV_ID],
+967,aSD_REPORT,,[Business View].[E2_TABLE].[TOTAL_6_MO_XAAS],
+968,aSD_REPORT,,[Business View].[E2_TABLE].[TOTAL_12_MO_XAAS],
+969,aSD_REPORT,,[Business View].[F_TABLE].[COVERAGE_ID],
+970,aSD_REPORT,,"
+[Business View].[F_TABLE].[IS_30_SLASH_46_LT10]",
+971,aSD_REPORT,,[Business View].[F_TABLE].[DIV_46_GT10],
+972,aSD_REPORT,,[Business View].[F_TABLE].[DIV_30_GT10],
+973,aSD_REPORT,,[Business View].[F_TABLE].[IS_DIV_30_SLASH_46_TOTAL],
+974,aSD_REPORT,,[Business View].[F_TABLE].[DIV_30_LT10],
+975,aSD_REPORT,,[Business View].[G_TABLE].[Cov Id],
+976,aSD_REPORT,,[Business View].[G_TABLE].[TOTAL REV Quota - Moonlight],
+977,aSD_REPORT,,[Business View].[G_TABLE].[TOTAL GP Quota - Moonlight],
+978,aSD_REPORT,,"COALESCE([C].[COV_ID],[D].[COV_ID])",
+979,aSD_REPORT,,[C].[C_Validated Rev Target],
+980,aSD_REPORT,,[C].[C_Validated GP Target],
+981,aSD_REPORT,,[D].[D 30 Revenue 3Q],
+982,aSD_REPORT,,[D].[D 30 Revenue 4Q],
+983,aSD_REPORT,,[D].[D 30 Revenue],
+984,aSD_REPORT,,[D].[D 30 GP BCP 3Q],
+985,aSD_REPORT,,[D].[D 30 GP BCP 4Q],
+986,aSD_REPORT,,[D].[D 30 GP Contract BCP],
+987,aSD_REPORT,,[D].[D 30 GP BMC 3Q],
+988,aSD_REPORT,,[D].[D 30 GP BMC 4Q],
+989,aSD_REPORT,,[D].[D 30 GP Contract BMC],
+990,aSD_REPORT,,"COALESCE([C&D].[COV_ID],[F].[COV_ID])
+",
+991,aSD_REPORT,,[C&D].[C_Validated Rev Target],
+992,aSD_REPORT,,[C&D].[C_Validated GP Target],
+993,aSD_REPORT,,[C&D].[D 30 Revenue 3Q],
+994,aSD_REPORT,,[C&D].[D 30 Revenue 4Q],
+995,aSD_REPORT,,[C&D].[D 30 Revenue],
+996,aSD_REPORT,,[C&D].[D 30 GP BCP 3Q],
+997,aSD_REPORT,,[C&D].[D 30 GP BCP 4Q],
+998,aSD_REPORT,,[C&D].[D 30 GP Contract BCP],
+999,aSD_REPORT,,[C&D].[D 30 GP BMC 3Q],
+1000,aSD_REPORT,,[C&D].[D 30 GP BMC 4Q],
+1001,aSD_REPORT,,[C&D].[D 30 GP Contract BMC],
+1002,aSD_REPORT,,[F].[F IS 30/46 Total Signings],
+1003,aSD_REPORT,,[F].[F IS 30/46 LT10 Signings],
+1004,aSD_REPORT,,[F].[F Div 30 GT10 Signings],
+1005,aSD_REPORT,,[F].[F Div 46 GT10 Signings],
+1006,aSD_REPORT,,"COALESCE([E1].[COV_ID],[E2].[COV_ID])
+",
+1007,aSD_REPORT,,[E1].[30 Total 6 mo XaaS],
+1008,aSD_REPORT,,[E1].[30 Total 12 mo XaaS],
+1009,aSD_REPORT,,[E2].[TOTAL_6_MO_XAAS],
+1010,aSD_REPORT,,[E2].[TOTAL_12_MO_XAAS],
+1011,aSD_REPORT,,"COALESCE([E1&E2].[COV_ID],[G].[COV_ID])
+",
+1012,aSD_REPORT,,[E1&E2].[E1 30 Total 6 mo XaaS],
+1013,aSD_REPORT,,[E1&E2].[E1 30 Total 12 mo XaaS],
+1014,aSD_REPORT,,[E1&E2].[E2 TOTAL_6_MO_XAAS],
+1015,aSD_REPORT,,[E1&E2].[E2 TOTAL_12_MO_XAAS],
+1016,aSD_REPORT,,[G].[TOTAL REV Quota - Moonlight],
+1017,aSD_REPORT,,[G].[TOTAL GP Quota - Moonlight],
+1018,aSD_REPORT,,"COALESCE([C&D&F].[COV_ID],[E1&E2&G].[COV_ID])
+",
+1019,aSD_REPORT,,"(case when [D&G 30 Revenue] is null then 0
+else [D&G 30 Revenue]
+end)+
+(case when[C 46 Revenue] is null then 0
+else [C 46 Revenue]
+end)
+
+",
+1020,aSD_REPORT,,"(case when [D 30 Revenue] is null then 0
+else [D 30 Revenue]
+end)+
+(case when [G 30 Moonlight Rev] is null then 0
+else [G 30 Moonlight Rev]
+end)
+",
+1021,aSD_REPORT,,[G TOTAL REV Quota - Moonlight],
+1022,aSD_REPORT,,[C&D&F].[D 30 Revenue],
+1023,aSD_REPORT,,[C&D&F].[D 30 Revenue 3Q],
+1024,aSD_REPORT,,[C&D&F].[D 30 Revenue 4Q],
+1025,aSD_REPORT,,[C_Validated Rev Target],
+1026,aSD_REPORT,,"(case when [D 30 GP Contract BCP] is null then 0
+else [D 30 GP Contract BCP]
+end)+
+(case when [G 30 Moonlight GP BCP] is null then 0
+else [G 30 Moonlight GP BCP]
+end)
++
+(case when [C 46 Validated GP Target] is null then 0
+else [C 46 Validated GP Target]
+end)
+",
+1027,aSD_REPORT,,[C&D&F].[D 30 GP Contract BCP],
+1028,aSD_REPORT,,[C&D&F].[D 30 GP BCP 3Q],
+1029,aSD_REPORT,,[C&D&F].[D 30 GP BCP 4Q],
+1030,aSD_REPORT,,[G TOTAL GP Quota - Moonlight],
+1031,aSD_REPORT,,[C_Validated GP Target],
+1032,aSD_REPORT,,"(case when [D 30 GP Contract BMC] is null then 0
+else [D 30 GP Contract BMC]
+end)+
+(case when [G 30 Moonlight GP BMC] is null then 0
+else [G 30 Moonlight GP BMC]
+end)
+
+
+",
+1033,aSD_REPORT,,[C&D&F].[D 30 GP Contract BMC],
+1034,aSD_REPORT,,[C&D&F].[D 30 GP BMC 3Q],
+1035,aSD_REPORT,,[C&D&F].[D 30 GP BMC 4Q],
+1036,aSD_REPORT,,[E1&E2&G].[G TOTAL GP Quota - Moonlight],
+1037,aSD_REPORT,,[C&D&F].[F IS 30/46 Total Signings],
+1038,aSD_REPORT,,[C&D&F].[F IS 30/46 LT10 Signings],
+1039,aSD_REPORT,,[C&D&F].[F Div 30 GT10 Signings],
+1040,aSD_REPORT,,[C&D&F].[F Div 46 GT10 Signings],
+1041,aSD_REPORT,,"(case when [E1 30 Total 6 mo XaaS] is null then 0
+else [E1 30 Total 6 mo XaaS]
+end)+
+(case when [E2 46 Total 6 mo XaaS] is null then 0
+else [E2 46 Total 6 mo XaaS]
+end)
++
+(case when [G 30 Moonlight XaaS] is null then 0
+else [G 30 Moonlight XaaS]
+end)",
+1042,aSD_REPORT,,[E1&E2&G].[E1 30 Total 6 mo XaaS],
+1043,aSD_REPORT,,[E2 TOTAL_6_MO_XAAS],
+1044,aSD_REPORT,,[E1&E2&G].[G TOTAL REV Quota - Moonlight],
+1045,aSD_REPORT,,[C&D&F].[C_Validated Rev Target],
+1046,aSD_REPORT,,[C&D&F].[C_Validated GP Target],
+1047,aSD_REPORT,,[E1&E2&G].[E1 30 Total 12 mo XaaS],
+1048,aSD_REPORT,,[E1&E2&G].[E2 TOTAL_6_MO_XAAS],
+1049,aSD_REPORT,,[E1&E2&G].[E2 TOTAL_12_MO_XAAS],
+1050,aSD_REPORT,,[E1&E2&G].[G TOTAL REV Quota - Moonlight],
+1051,aSD_REPORT,,[E1&E2&G].[G TOTAL GP Quota - Moonlight],
+1052,aSD_REPORT,,"replace(substr([Business View].[QUOTA_KEYSTONE_T_MAIN].[MARKET_NAME],4),'/CSI','')
+",
+1053,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[TERRITORY_TYPE],
+1054,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COVERAGE_ID_NAME],
+1055,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COV_ID],
+1056,aSD_REPORT,,"'unknown'
+",
+1057,aSD_REPORT,,'unknown',
+1058,aSD_REPORT,,'unknown',
+1059,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COV_ID],
+1060,aSD_REPORT,,"case when 
+[KEYSTONE].[Market Name] is null then 'unknown'
+else  [KEYSTONE].[Market Name]
+end",
+1061,aSD_REPORT,,"case when  [KEYSTONE].[Customer Set] is null
+then 'unknown'
+else  [KEYSTONE].[Customer Set]
+end",
+1062,aSD_REPORT,,"case when [KEYSTONE].[Coverage ID Name] is null
+then 'unknown'
+else [KEYSTONE].[Coverage ID Name]
+end",
+1063,aSD_REPORT,,"COALESCE([C&D&E1&E2&F&G].[COV_ID],[KEYSTONE].[Cov Id])",
+1064,aSD_REPORT,,"case 
+when [Cov ID1] in ('912_CFCNLEA','912_CFLOAC','912_CFCOMEA')
+then 'C000000'
+when [Cov ID1] in ('912_CFDSNLE','912_CFDISWE','912_CFLOAD')
+then 'D000000'
+when [Cov ID1] in ('912_CFBNKEA','912_CFFNMEA','912_CFFSSEA','912_CFLOAF','912_CFINSWE')
+then 'F000000'
+when [Cov ID1] in ('912_CFLOAI')
+then 'I000000'
+when [Cov ID1] in ('912_CFLOAP')
+then 'P000000'
+else  [Cov ID1]
+end",
+1065,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G&C 30 Revenue],
+1066,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G 30 Revenue],
+1067,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight Rev],
+1068,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue],
+1069,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue 3Q],
+1070,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue 4Q],
+1071,aSD_REPORT,,[C&D&E1&E2&F&G].[C 46 Revenue],
+1072,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G&C BCP GP],
+1073,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP Contract BCP],
+1074,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BCP 3Q],
+1075,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BCP 4Q],
+1076,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight GP BCP],
+1077,aSD_REPORT,,[C&D&E1&E2&F&G].[C 46 Validated GP Target],
+1078,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G BMC GP],
+1079,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP Contract BMC],
+1080,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BMC 3Q],
+1081,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BMC 4Q],
+1082,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight GP BMC],
+1083,aSD_REPORT,,[C&D&E1&E2&F&G].[F IS 30/46 Total Signings],
+1084,aSD_REPORT,,[C&D&E1&E2&F&G].[F IS 30/46 LT10 Signings],
+1085,aSD_REPORT,,[C&D&E1&E2&F&G].[F Div 30 GT10 Signings],
+1086,aSD_REPORT,,[C&D&E1&E2&F&G].[F Div 46 GT10 Signings],
+1087,aSD_REPORT,,[C&D&E1&E2&F&G].[E XaaS],
+1088,aSD_REPORT,,[C&D&E1&E2&F&G].[E1 30 Total 6 mo XaaS],
+1089,aSD_REPORT,,[C&D&E1&E2&F&G].[E2 46 Total 6 mo XaaS],
+1090,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight XaaS],
+1091,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then 'Communication'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then 'Distribution'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then 'Financial Service'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then 'Industrial'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then 'Public'
+else [Main0].[Market Name]
+end",
+1092,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] IN ('C000000','D000000','F000000','I000000','P000000') then 'unknown'
+else [Main0].[Customer Set]
+end",
+1093,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then '_COMMUNICATIONS PLUG'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then '_DISTRIBUTION PLUG'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then '_FINANCIAL SERVICES PLUG'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then '_INDUSTRIAL PLUG'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then '_PUBLIC PLUG'
+else [Main0].[Coverage ID Name]
+end",
+1094,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then 'C000000'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then 'D000000'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then 'F000000'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then 'I000000'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then 'P000000'
+else [Main0].[Cov ID1]
+end",
+1095,aSD_REPORT,,[Main0].[D&G&C 30 Revenue],
+1096,aSD_REPORT,,[Main0].[D&G 30 Revenue],
+1097,aSD_REPORT,,[Main0].[G 30 Moonlight Rev],
+1098,aSD_REPORT,,[Main0].[D 30 Revenue],
+1099,aSD_REPORT,,[Main0].[D 30 Revenue 3Q],
+1100,aSD_REPORT,,[Main0].[D 30 Revenue 4Q],
+1101,aSD_REPORT,,[Main0].[C 46 Revenue],
+1102,aSD_REPORT,,[Main0].[D&G&C BCP GP],
+1103,aSD_REPORT,,[Main0].[D 30 GP Contract BCP],
+1104,aSD_REPORT,,[Main0].[D 30 GP BCP 3Q],
+1105,aSD_REPORT,,[Main0].[D 30 GP BCP 4Q],
+1106,aSD_REPORT,,[Main0].[G 30 Moonlight GP BCP],
+1107,aSD_REPORT,,[Main0].[C 46 Validated GP Target],
+1108,aSD_REPORT,,[Main0].[D&G BMC GP],
+1109,aSD_REPORT,,[Main0].[D 30 GP Contract BMC],
+1110,aSD_REPORT,,[Main0].[D 30 GP BMC 3Q],
+1111,aSD_REPORT,,[Main0].[D 30 GP BMC 4Q],
+1112,aSD_REPORT,,[Main0].[G 30 Moonlight GP BMC],
+1113,aSD_REPORT,,[Main0].[F IS 30/46 Total Signings],
+1114,aSD_REPORT,,[Main0].[F IS 30/46 LT10 Signings],
+1115,aSD_REPORT,,[Main0].[F Div 30 GT10 Signings],
+1116,aSD_REPORT,,[Main0].[F Div 46 GT10 Signings],
+1117,aSD_REPORT,,[Main0].[E XaaS],
+1118,aSD_REPORT,,[Main0].[E1 30 Total 6 mo XaaS],
+1119,aSD_REPORT,,[Main0].[E2 46 Total 6 mo XaaS],
+1120,aSD_REPORT,,[Main0].[G 30 Moonlight XaaS],
+1121,aSD_REPORT,,[Main].[Market Name],
+1122,aSD_REPORT,,[Main].[Customer Set],
+1123,aSD_REPORT,,[Main].[Coverage ID Name],
+1124,aSD_REPORT,,[Main].[Cov ID],
+1125,aSD_REPORT,,"case
+when [Main].[D&G&C 30 Revenue] is null then 0 
+else [Main].[D&G&C 30 Revenue]
+end",
+1126,aSD_REPORT,,"case
+when [Main].[D&G 30 Revenue] is null then 0 
+else [Main].[D&G 30 Revenue]
+end",
+1127,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight Rev] is null then 0 
+else [Main].[G 30 Moonlight Rev]
+end",
+1128,aSD_REPORT,,"case
+when [Main].[D 30 Revenue] is null then 0
+else [Main].[D 30 Revenue]
+end",
+1129,aSD_REPORT,,"case
+when [Main].[D 30 Revenue 3Q] is null then 0 
+else [Main].[D 30 Revenue 3Q]
+end",
+1130,aSD_REPORT,,"case
+when [Main].[D 30 Revenue 4Q] is null then 0
+else [Main].[D 30 Revenue 4Q]
+end",
+1131,aSD_REPORT,,"case
+when [Main].[C 46 Revenue] is null then 0
+else [Main].[C 46 Revenue]
+end",
+1132,aSD_REPORT,,"case
+when [Main].[D&G&C BCP GP] is null then 0
+else [Main].[D&G&C BCP GP]
+end",
+1133,aSD_REPORT,,"case
+when [Main].[D 30 GP Contract BCP] is null then 0
+else [Main].[D 30 GP Contract BCP]
+end",
+1134,aSD_REPORT,,"case
+when [Main].[D 30 GP BCP 3Q] is null then 0
+else [Main].[D 30 GP BCP 3Q]
+end",
+1135,aSD_REPORT,,"case
+when [Main].[D 30 GP BCP 4Q] is null then 0
+else [Main].[D 30 GP BCP 4Q]
+end",
+1136,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight GP BCP] is null then 0
+else [Main].[G 30 Moonlight GP BCP]
+end",
+1137,aSD_REPORT,,"case
+when [Main].[C 46 Validated GP Target] is null then 0
+else [Main].[C 46 Validated GP Target]
+end",
+1138,aSD_REPORT,,"case
+when [Main].[D&G BMC GP] is null then 0
+else [Main].[D&G BMC GP]
+end",
+1139,aSD_REPORT,,"case
+when [Main].[D 30 GP Contract BMC] is null then 0
+else [Main].[D 30 GP Contract BMC]
+end",
+1140,aSD_REPORT,,"case
+when [Main].[D 30 GP BMC 3Q] is null then 0
+else [Main].[D 30 GP BMC 3Q]
+end",
+1141,aSD_REPORT,,"case
+when [Main].[D 30 GP BMC 4Q] is null then 0
+else [Main].[D 30 GP BMC 4Q]
+end",
+1142,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight GP BMC] is null then 0 
+else [Main].[G 30 Moonlight GP BMC]
+end",
+1143,aSD_REPORT,,"case
+when [Main].[F IS 30/46 Total Signings] is null then 0
+else [Main].[F IS 30/46 Total Signings]
+end",
+1144,aSD_REPORT,,"case
+when [Main].[F IS 30/46 LT10 Signings] is null then 0
+else [Main].[F IS 30/46 LT10 Signings]
+end",
+1145,aSD_REPORT,,"case
+when [Main].[F Div 30 GT10 Signings] is null then 0
+else [Main].[F Div 30 GT10 Signings]
+end",
+1146,aSD_REPORT,,"case
+when [Main].[F Div 46 GT10 Signings] is null then 0
+else [Main].[F Div 46 GT10 Signings]
+end",
+1147,aSD_REPORT,,"case
+when [Main].[E XaaS] is null then 0
+else [Main].[E XaaS]
+end",
+1148,aSD_REPORT,,"case
+when [Main].[E1 30 Total 6 mo XaaS] is null then 0
+else [Main].[E1 30 Total 6 mo XaaS]
+end",
+1149,aSD_REPORT,,"case
+when [Main].[E2 46 Total 6 mo XaaS] is null then 0
+else [Main].[E2 46 Total 6 mo XaaS]
+end",
+1150,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight XaaS] is null then 0
+else [Main].[G 30 Moonlight XaaS]
+end",
+1151,aSD_REPORT,,[Main].[Market Name],
+1152,aSD_REPORT,,[Main].[Customer Set],
+1153,aSD_REPORT,,[Main].[Coverage ID Name],
+1154,aSD_REPORT,,[Main].[Cov ID],
+1155,aSD_REPORT,,[Main2].[Market Name],
+1156,aSD_REPORT,,[Main2].[Customer Set],
+1157,aSD_REPORT,/content/folder[@name='Quota Folder']/package[@name='S&D Package']/model[@name='2017-06-22T08:47:18.794Z'],,
+1158,aSD_REPORT,,,[AFFILIATE_NUMBER] = 'F000000'
+1159,aSD_REPORT,,,[Business View].[C_TABLE].[PERIOD]='2H'
+1160,aSD_REPORT,,,[Business View].[C_TABLE].[BRAND]='IS - ITS'
+1161,aSD_REPORT,,,[COV_ID] IS NOT NULL
+1162,aSD_REPORT,,,[C].[COV_ID] = [D].[COV_ID]
+1163,aSD_REPORT,,,[C&D].[COV_ID] = [F].[COV_ID]
+1164,aSD_REPORT,,,[E1].[COV_ID] = [E2].[COV_ID]
+1165,aSD_REPORT,,,[E1&E2].[COV_ID] = [G].[COV_ID]
+1166,aSD_REPORT,,,[C&D&F].[COV_ID] = [E1&E2&G].[COV_ID]
+1167,aSD_REPORT,,,[C&D&E1&E2&F&G].[COV_ID] = [KEYSTONE].[Cov Id]
+1168,aSD_REPORT,,,[Cov ID] in ?CovID?
+1169,aSD_REPORT,,,[Main0].[Cov ID1] = [B].[CONTRACTS]
+1170,aSD_REPORT,,,[Market Name] in ?Market?
+1171,aSD_REPORT,,,[Customer Set] in ?CustomerSet?
+1172,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[CONTACT_IOT],
+1173,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[CONTACT_SECTOR_NAME],
+1174,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[CONTACT_ACCOUNT_NAME],
+1175,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[MTAS_ACCOUNT_NAME],
+1176,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[CYCLE_DATE],
+1177,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[ACTIVE_STATUS],
+1178,aSD_REPORT,,[GTS Metrics].[PULSE_DATA_T].[LAST_UPDATE_TS],
+1179,aSD_REPORT,/content/folder[@name='NA']/folder[@name='GTS Metrics Project']/folder[@name='Packages']/folder[@name='Framework Package']/package[@name='FPK_GTSM']/model[@name='2017-06-09T10:06:57.109Z'],,
+1180,aSD_REPORT,,,[MTAS_ACCOUNT_NAME] is not null
+1181,aSD_REPORT,,,[ACTIVE_STATUS] = 'A'
+1182,aSD_REPORT,,[Business View].[B_TABLE].[CONTRACTS],
+1183,aSD_REPORT,,[Business View].[B_TABLE].[AFFILIATE_NUMBER],
+1184,aSD_REPORT,,[Business View].[C_TABLE].[COVERAGE_ID],
+1185,aSD_REPORT,,[Business View].[C_TABLE].[Validated Rev Target],
+1186,aSD_REPORT,,[Business View].[C_TABLE].[Validated GP Target],
+1187,aSD_REPORT,,"case when [Business View].[D_TABLE].[COV_ID] is null
+then [Business View].[D_TABLE].[CONTRACTS]
+else [Business View].[D_TABLE].[COV_ID]
+end",
+1188,aSD_REPORT,,[Business View].[D_TABLE].[30 Revenue Majors],
+1189,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - Rev Majors],
+1190,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - Rev Majors],
+1191,aSD_REPORT,,[Business View].[D_TABLE].[30 GP BCP],
+1192,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - GP BCP],
+1193,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - GP BCP],
+1194,aSD_REPORT,,[Business View].[D_TABLE].[30 GP BMC],
+1195,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - GP BMC],
+1196,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - GP BMC],
+1197,aSD_REPORT,,"case when 
+[Business View].[E1_TABLE].[COV_ID] is null
+then [Business View].[E1_TABLE].[CONTRACTS]
+else [Business View].[E1_TABLE].[COV_ID]
+end",
+1198,aSD_REPORT,,[Business View].[E1_TABLE].[30 Total 6 mo XaaS],
+1199,aSD_REPORT,,[Business View].[E1_TABLE].[30 Total 12 mo XaaS],
+1200,aSD_REPORT,,[Business View].[E2_TABLE].[COV_ID],
+1201,aSD_REPORT,,[Business View].[E2_TABLE].[TOTAL_6_MO_XAAS],
+1202,aSD_REPORT,,[Business View].[E2_TABLE].[TOTAL_12_MO_XAAS],
+1203,aSD_REPORT,,[Business View].[F_TABLE].[COVERAGE_ID],
+1204,aSD_REPORT,,"
+[Business View].[F_TABLE].[IS_30_SLASH_46_LT10]",
+1205,aSD_REPORT,,[Business View].[F_TABLE].[DIV_46_GT10],
+1206,aSD_REPORT,,[Business View].[F_TABLE].[DIV_30_GT10],
+1207,aSD_REPORT,,[Business View].[F_TABLE].[IS_DIV_30_SLASH_46_TOTAL],
+1208,aSD_REPORT,,[Business View].[F_TABLE].[DIV_30_LT10],
+1209,aSD_REPORT,,[Business View].[G_TABLE].[Cov Id],
+1210,aSD_REPORT,,[Business View].[G_TABLE].[TOTAL REV Quota - Moonlight],
+1211,aSD_REPORT,,[Business View].[G_TABLE].[TOTAL GP Quota - Moonlight],
+1212,aSD_REPORT,,"COALESCE([C].[COV_ID],[D].[COV_ID])",
+1213,aSD_REPORT,,[C].[C_Validated Rev Target],
+1214,aSD_REPORT,,[C].[C_Validated GP Target],
+1215,aSD_REPORT,,[D].[D 30 Revenue 3Q],
+1216,aSD_REPORT,,[D].[D 30 Revenue 4Q],
+1217,aSD_REPORT,,[D].[D 30 Revenue],
+1218,aSD_REPORT,,[D].[D 30 GP BCP 3Q],
+1219,aSD_REPORT,,[D].[D 30 GP BCP 4Q],
+1220,aSD_REPORT,,[D].[D 30 GP Contract BCP],
+1221,aSD_REPORT,,[D].[D 30 GP BMC 3Q],
+1222,aSD_REPORT,,[D].[D 30 GP BMC 4Q],
+1223,aSD_REPORT,,[D].[D 30 GP Contract BMC],
+1224,aSD_REPORT,,"COALESCE([C&D].[COV_ID],[F].[COV_ID])
+",
+1225,aSD_REPORT,,[C&D].[C_Validated Rev Target],
+1226,aSD_REPORT,,[C&D].[C_Validated GP Target],
+1227,aSD_REPORT,,[C&D].[D 30 Revenue 3Q],
+1228,aSD_REPORT,,[C&D].[D 30 Revenue 4Q],
+1229,aSD_REPORT,,[C&D].[D 30 Revenue],
+1230,aSD_REPORT,,[C&D].[D 30 GP BCP 3Q],
+1231,aSD_REPORT,,[C&D].[D 30 GP BCP 4Q],
+1232,aSD_REPORT,,[C&D].[D 30 GP Contract BCP],
+1233,aSD_REPORT,,[C&D].[D 30 GP BMC 3Q],
+1234,aSD_REPORT,,[C&D].[D 30 GP BMC 4Q],
+1235,aSD_REPORT,,[C&D].[D 30 GP Contract BMC],
+1236,aSD_REPORT,,[F].[F IS 30/46 Total Signings],
+1237,aSD_REPORT,,[F].[F IS 30/46 LT10 Signings],
+1238,aSD_REPORT,,[F].[F Div 30 GT10 Signings],
+1239,aSD_REPORT,,[F].[F Div 46 GT10 Signings],
+1240,aSD_REPORT,,"COALESCE([E1].[COV_ID],[E2].[COV_ID])
+",
+1241,aSD_REPORT,,[E1].[30 Total 6 mo XaaS],
+1242,aSD_REPORT,,[E1].[30 Total 12 mo XaaS],
+1243,aSD_REPORT,,[E2].[TOTAL_6_MO_XAAS],
+1244,aSD_REPORT,,[E2].[TOTAL_12_MO_XAAS],
+1245,aSD_REPORT,,"COALESCE([E1&E2].[COV_ID],[G].[COV_ID])
+",
+1246,aSD_REPORT,,[E1&E2].[E1 30 Total 6 mo XaaS],
+1247,aSD_REPORT,,[E1&E2].[E1 30 Total 12 mo XaaS],
+1248,aSD_REPORT,,[E1&E2].[E2 TOTAL_6_MO_XAAS],
+1249,aSD_REPORT,,[E1&E2].[E2 TOTAL_12_MO_XAAS],
+1250,aSD_REPORT,,[G].[TOTAL REV Quota - Moonlight],
+1251,aSD_REPORT,,[G].[TOTAL GP Quota - Moonlight],
+1252,aSD_REPORT,,"COALESCE([C&D&F].[COV_ID],[E1&E2&G].[COV_ID])
+",
+1253,aSD_REPORT,,"(case when [D&G 30 Revenue] is null then 0
+else [D&G 30 Revenue]
+end)+
+(case when[C 46 Revenue] is null then 0
+else [C 46 Revenue]
+end)
+
+",
+1254,aSD_REPORT,,"(case when [D 30 Revenue] is null then 0
+else [D 30 Revenue]
+end)+
+(case when [G 30 Moonlight Rev] is null then 0
+else [G 30 Moonlight Rev]
+end)
+",
+1255,aSD_REPORT,,[G TOTAL REV Quota - Moonlight],
+1256,aSD_REPORT,,[C&D&F].[D 30 Revenue],
+1257,aSD_REPORT,,[C&D&F].[D 30 Revenue 3Q],
+1258,aSD_REPORT,,[C&D&F].[D 30 Revenue 4Q],
+1259,aSD_REPORT,,[C_Validated Rev Target],
+1260,aSD_REPORT,,"(case when [D 30 GP Contract BCP] is null then 0
+else [D 30 GP Contract BCP]
+end)+
+(case when [G 30 Moonlight GP BCP] is null then 0
+else [G 30 Moonlight GP BCP]
+end)
++
+(case when [C 46 Validated GP Target] is null then 0
+else [C 46 Validated GP Target]
+end)
+",
+1261,aSD_REPORT,,[C&D&F].[D 30 GP Contract BCP],
+1262,aSD_REPORT,,[C&D&F].[D 30 GP BCP 3Q],
+1263,aSD_REPORT,,[C&D&F].[D 30 GP BCP 4Q],
+1264,aSD_REPORT,,[G TOTAL GP Quota - Moonlight],
+1265,aSD_REPORT,,[C_Validated GP Target],
+1266,aSD_REPORT,,"(case when [D 30 GP Contract BMC] is null then 0
+else [D 30 GP Contract BMC]
+end)+
+(case when [G 30 Moonlight GP BMC] is null then 0
+else [G 30 Moonlight GP BMC]
+end)
+
+
+",
+1267,aSD_REPORT,,[C&D&F].[D 30 GP Contract BMC],
+1268,aSD_REPORT,,[C&D&F].[D 30 GP BMC 3Q],
+1269,aSD_REPORT,,[C&D&F].[D 30 GP BMC 4Q],
+1270,aSD_REPORT,,[E1&E2&G].[G TOTAL GP Quota - Moonlight],
+1271,aSD_REPORT,,[C&D&F].[F IS 30/46 Total Signings],
+1272,aSD_REPORT,,[C&D&F].[F IS 30/46 LT10 Signings],
+1273,aSD_REPORT,,[C&D&F].[F Div 30 GT10 Signings],
+1274,aSD_REPORT,,[C&D&F].[F Div 46 GT10 Signings],
+1275,aSD_REPORT,,"(case when [E1 30 Total 6 mo XaaS] is null then 0
+else [E1 30 Total 6 mo XaaS]
+end)+
+(case when [E2 46 Total 6 mo XaaS] is null then 0
+else [E2 46 Total 6 mo XaaS]
+end)
++
+(case when [G 30 Moonlight XaaS] is null then 0
+else [G 30 Moonlight XaaS]
+end)",
+1276,aSD_REPORT,,[E1&E2&G].[E1 30 Total 6 mo XaaS],
+1277,aSD_REPORT,,[E2 TOTAL_6_MO_XAAS],
+1278,aSD_REPORT,,[E1&E2&G].[G TOTAL REV Quota - Moonlight],
+1279,aSD_REPORT,,[C&D&F].[C_Validated Rev Target],
+1280,aSD_REPORT,,[C&D&F].[C_Validated GP Target],
+1281,aSD_REPORT,,[E1&E2&G].[E1 30 Total 12 mo XaaS],
+1282,aSD_REPORT,,[E1&E2&G].[E2 TOTAL_6_MO_XAAS],
+1283,aSD_REPORT,,[E1&E2&G].[E2 TOTAL_12_MO_XAAS],
+1284,aSD_REPORT,,[E1&E2&G].[G TOTAL REV Quota - Moonlight],
+1285,aSD_REPORT,,[E1&E2&G].[G TOTAL GP Quota - Moonlight],
+1286,aSD_REPORT,,"replace(substr([Business View].[QUOTA_KEYSTONE_T_MAIN].[MARKET_NAME],4),'/CSI','')
+",
+1287,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[TERRITORY_TYPE],
+1288,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COVERAGE_ID_NAME],
+1289,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COV_ID],
+1290,aSD_REPORT,,"'unknown'
+",
+1291,aSD_REPORT,,'unknown',
+1292,aSD_REPORT,,'unknown',
+1293,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COV_ID],
+1294,aSD_REPORT,,"case when 
+[KEYSTONE].[Market Name] is null then 'unknown'
+else  [KEYSTONE].[Market Name]
+end",
+1295,aSD_REPORT,,"case when  [KEYSTONE].[Customer Set] is null
+then 'unknown'
+else  [KEYSTONE].[Customer Set]
+end",
+1296,aSD_REPORT,,"case when [KEYSTONE].[Coverage ID Name] is null
+then 'unknown'
+else [KEYSTONE].[Coverage ID Name]
+end",
+1297,aSD_REPORT,,"COALESCE([C&D&E1&E2&F&G].[COV_ID],[KEYSTONE].[Cov Id])",
+1298,aSD_REPORT,,"case 
+when [Cov ID1] in ('912_CFCNLEA','912_CFLOAC','912_CFCOMEA')
+then 'C000000'
+when [Cov ID1] in ('912_CFDSNLE','912_CFDISWE','912_CFLOAD')
+then 'D000000'
+when [Cov ID1] in ('912_CFBNKEA','912_CFFNMEA','912_CFFSSEA','912_CFLOAF','912_CFINSWE')
+then 'F000000'
+when [Cov ID1] in ('912_CFLOAI')
+then 'I000000'
+when [Cov ID1] in ('912_CFLOAP')
+then 'P000000'
+else  [Cov ID1]
+end",
+1299,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G&C 30 Revenue],
+1300,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G 30 Revenue],
+1301,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight Rev],
+1302,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue],
+1303,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue 3Q],
+1304,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue 4Q],
+1305,aSD_REPORT,,[C&D&E1&E2&F&G].[C 46 Revenue],
+1306,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G&C BCP GP],
+1307,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP Contract BCP],
+1308,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BCP 3Q],
+1309,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BCP 4Q],
+1310,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight GP BCP],
+1311,aSD_REPORT,,[C&D&E1&E2&F&G].[C 46 Validated GP Target],
+1312,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G BMC GP],
+1313,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP Contract BMC],
+1314,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BMC 3Q],
+1315,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BMC 4Q],
+1316,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight GP BMC],
+1317,aSD_REPORT,,[C&D&E1&E2&F&G].[F IS 30/46 Total Signings],
+1318,aSD_REPORT,,[C&D&E1&E2&F&G].[F IS 30/46 LT10 Signings],
+1319,aSD_REPORT,,[C&D&E1&E2&F&G].[F Div 30 GT10 Signings],
+1320,aSD_REPORT,,[C&D&E1&E2&F&G].[F Div 46 GT10 Signings],
+1321,aSD_REPORT,,[C&D&E1&E2&F&G].[E XaaS],
+1322,aSD_REPORT,,[C&D&E1&E2&F&G].[E1 30 Total 6 mo XaaS],
+1323,aSD_REPORT,,[C&D&E1&E2&F&G].[E2 46 Total 6 mo XaaS],
+1324,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight XaaS],
+1325,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then 'Communication'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then 'Distribution'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then 'Financial Service'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then 'Industrial'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then 'Public'
+else [Main0].[Market Name]
+end",
+1326,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] IN ('C000000','D000000','F000000','I000000','P000000') then 'unknown'
+else [Main0].[Customer Set]
+end",
+1327,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then '_COMMUNICATIONS PLUG'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then '_DISTRIBUTION PLUG'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then '_FINANCIAL SERVICES PLUG'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then '_INDUSTRIAL PLUG'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then '_PUBLIC PLUG'
+else [Main0].[Coverage ID Name]
+end",
+1328,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then 'C000000'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then 'D000000'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then 'F000000'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then 'I000000'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then 'P000000'
+else [Main0].[Cov ID1]
+end",
+1329,aSD_REPORT,,[Main0].[D&G&C 30 Revenue],
+1330,aSD_REPORT,,[Main0].[D&G 30 Revenue],
+1331,aSD_REPORT,,[Main0].[G 30 Moonlight Rev],
+1332,aSD_REPORT,,[Main0].[D 30 Revenue],
+1333,aSD_REPORT,,[Main0].[D 30 Revenue 3Q],
+1334,aSD_REPORT,,[Main0].[D 30 Revenue 4Q],
+1335,aSD_REPORT,,[Main0].[C 46 Revenue],
+1336,aSD_REPORT,,[Main0].[D&G&C BCP GP],
+1337,aSD_REPORT,,[Main0].[D 30 GP Contract BCP],
+1338,aSD_REPORT,,[Main0].[D 30 GP BCP 3Q],
+1339,aSD_REPORT,,[Main0].[D 30 GP BCP 4Q],
+1340,aSD_REPORT,,[Main0].[G 30 Moonlight GP BCP],
+1341,aSD_REPORT,,[Main0].[C 46 Validated GP Target],
+1342,aSD_REPORT,,[Main0].[D&G BMC GP],
+1343,aSD_REPORT,,[Main0].[D 30 GP Contract BMC],
+1344,aSD_REPORT,,[Main0].[D 30 GP BMC 3Q],
+1345,aSD_REPORT,,[Main0].[D 30 GP BMC 4Q],
+1346,aSD_REPORT,,[Main0].[G 30 Moonlight GP BMC],
+1347,aSD_REPORT,,[Main0].[F IS 30/46 Total Signings],
+1348,aSD_REPORT,,[Main0].[F IS 30/46 LT10 Signings],
+1349,aSD_REPORT,,[Main0].[F Div 30 GT10 Signings],
+1350,aSD_REPORT,,[Main0].[F Div 46 GT10 Signings],
+1351,aSD_REPORT,,[Main0].[E XaaS],
+1352,aSD_REPORT,,[Main0].[E1 30 Total 6 mo XaaS],
+1353,aSD_REPORT,,[Main0].[E2 46 Total 6 mo XaaS],
+1354,aSD_REPORT,,[Main0].[G 30 Moonlight XaaS],
+1355,aSD_REPORT,,[Main].[Market Name],
+1356,aSD_REPORT,,[Main].[Customer Set],
+1357,aSD_REPORT,,[Main].[Coverage ID Name],
+1358,aSD_REPORT,,[Main].[Cov ID],
+1359,aSD_REPORT,,"case
+when [Main].[D&G&C 30 Revenue] is null then 0 
+else [Main].[D&G&C 30 Revenue]
+end",
+1360,aSD_REPORT,,"case
+when [Main].[D&G 30 Revenue] is null then 0 
+else [Main].[D&G 30 Revenue]
+end",
+1361,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight Rev] is null then 0 
+else [Main].[G 30 Moonlight Rev]
+end",
+1362,aSD_REPORT,,"case
+when [Main].[D 30 Revenue] is null then 0
+else [Main].[D 30 Revenue]
+end",
+1363,aSD_REPORT,,"case
+when [Main].[D 30 Revenue 3Q] is null then 0 
+else [Main].[D 30 Revenue 3Q]
+end",
+1364,aSD_REPORT,,"case
+when [Main].[D 30 Revenue 4Q] is null then 0
+else [Main].[D 30 Revenue 4Q]
+end",
+1365,aSD_REPORT,,"case
+when [Main].[C 46 Revenue] is null then 0
+else [Main].[C 46 Revenue]
+end",
+1366,aSD_REPORT,,"case
+when [Main].[D&G&C BCP GP] is null then 0
+else [Main].[D&G&C BCP GP]
+end",
+1367,aSD_REPORT,,"case
+when [Main].[D 30 GP Contract BCP] is null then 0
+else [Main].[D 30 GP Contract BCP]
+end",
+1368,aSD_REPORT,,"case
+when [Main].[D 30 GP BCP 3Q] is null then 0
+else [Main].[D 30 GP BCP 3Q]
+end",
+1369,aSD_REPORT,,"case
+when [Main].[D 30 GP BCP 4Q] is null then 0
+else [Main].[D 30 GP BCP 4Q]
+end",
+1370,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight GP BCP] is null then 0
+else [Main].[G 30 Moonlight GP BCP]
+end",
+1371,aSD_REPORT,,"case
+when [Main].[C 46 Validated GP Target] is null then 0
+else [Main].[C 46 Validated GP Target]
+end",
+1372,aSD_REPORT,,"case
+when [Main].[D&G BMC GP] is null then 0
+else [Main].[D&G BMC GP]
+end",
+1373,aSD_REPORT,,"case
+when [Main].[D 30 GP Contract BMC] is null then 0
+else [Main].[D 30 GP Contract BMC]
+end",
+1374,aSD_REPORT,,"case
+when [Main].[D 30 GP BMC 3Q] is null then 0
+else [Main].[D 30 GP BMC 3Q]
+end",
+1375,aSD_REPORT,,"case
+when [Main].[D 30 GP BMC 4Q] is null then 0
+else [Main].[D 30 GP BMC 4Q]
+end",
+1376,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight GP BMC] is null then 0 
+else [Main].[G 30 Moonlight GP BMC]
+end",
+1377,aSD_REPORT,,"case
+when [Main].[F IS 30/46 Total Signings] is null then 0
+else [Main].[F IS 30/46 Total Signings]
+end",
+1378,aSD_REPORT,,"case
+when [Main].[F IS 30/46 LT10 Signings] is null then 0
+else [Main].[F IS 30/46 LT10 Signings]
+end",
+1379,aSD_REPORT,,"case
+when [Main].[F Div 30 GT10 Signings] is null then 0
+else [Main].[F Div 30 GT10 Signings]
+end",
+1380,aSD_REPORT,,"case
+when [Main].[F Div 46 GT10 Signings] is null then 0
+else [Main].[F Div 46 GT10 Signings]
+end",
+1381,aSD_REPORT,,"case
+when [Main].[E XaaS] is null then 0
+else [Main].[E XaaS]
+end",
+1382,aSD_REPORT,,"case
+when [Main].[E1 30 Total 6 mo XaaS] is null then 0
+else [Main].[E1 30 Total 6 mo XaaS]
+end",
+1383,aSD_REPORT,,"case
+when [Main].[E2 46 Total 6 mo XaaS] is null then 0
+else [Main].[E2 46 Total 6 mo XaaS]
+end",
+1384,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight XaaS] is null then 0
+else [Main].[G 30 Moonlight XaaS]
+end",
+1385,aSD_REPORT,,[Main].[Market Name],
+1386,aSD_REPORT,,[Main].[Customer Set],
+1387,aSD_REPORT,,[Main].[Coverage ID Name],
+1388,aSD_REPORT,,[Main].[Cov ID],
+1389,aSD_REPORT,,[Main2].[Market Name],
+1390,aSD_REPORT,,[Main2].[Customer Set],
+1391,aSD_REPORT,/content/folder[@name='Quota Folder']/package[@name='S&D Package']/model[@name='2017-06-22T08:47:18.794Z'],,
+1392,aSD_REPORT,,,[AFFILIATE_NUMBER] = 'F000000'
+1393,aSD_REPORT,,,[Business View].[C_TABLE].[PERIOD]='2H'
+1394,aSD_REPORT,,,[Business View].[C_TABLE].[BRAND]='IS - ITS'
+1395,aSD_REPORT,,,[COV_ID] IS NOT NULL
+1396,aSD_REPORT,,,[C].[COV_ID] = [D].[COV_ID]
+1397,aSD_REPORT,,,[C&D].[COV_ID] = [F].[COV_ID]
+1398,aSD_REPORT,,,[E1].[COV_ID] = [E2].[COV_ID]
+1399,aSD_REPORT,,,[E1&E2].[COV_ID] = [G].[COV_ID]
+1400,aSD_REPORT,,,[C&D&F].[COV_ID] = [E1&E2&G].[COV_ID]
+1401,aSD_REPORT,,,[C&D&E1&E2&F&G].[COV_ID] = [KEYSTONE].[Cov Id]
+1402,aSD_REPORT,,,[Cov ID] in ?CovID?
+1403,aSD_REPORT,,,[Main0].[Cov ID1] = [B].[CONTRACTS]
+1404,aSD_REPORT,,,[Market Name] in ?Market?
+1405,aSD_REPORT,,,[Customer Set] in ?CustomerSet?
+1406,aSD_REPORT,,[Business View].[B_TABLE].[CONTRACTS],
+1407,aSD_REPORT,,[Business View].[B_TABLE].[AFFILIATE_NUMBER],
+1408,aSD_REPORT,,[Business View].[C_TABLE].[COVERAGE_ID],
+1409,aSD_REPORT,,[Business View].[C_TABLE].[Validated Rev Target],
+1410,aSD_REPORT,,[Business View].[C_TABLE].[Validated GP Target],
+1411,aSD_REPORT,,"case when [Business View].[D_TABLE].[COV_ID] is null
+then [Business View].[D_TABLE].[CONTRACTS]
+else [Business View].[D_TABLE].[COV_ID]
+end",
+1412,aSD_REPORT,,[Business View].[D_TABLE].[30 Revenue Majors],
+1413,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - Rev Majors],
+1414,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - Rev Majors],
+1415,aSD_REPORT,,[Business View].[D_TABLE].[30 GP BCP],
+1416,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - GP BCP],
+1417,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - GP BCP],
+1418,aSD_REPORT,,[Business View].[D_TABLE].[30 GP BMC],
+1419,aSD_REPORT,,[Business View].[D_TABLE].[Q3 - GP BMC],
+1420,aSD_REPORT,,[Business View].[D_TABLE].[Q4 - GP BMC],
+1421,aSD_REPORT,,"case when 
+[Business View].[E1_TABLE].[COV_ID] is null
+then [Business View].[E1_TABLE].[CONTRACTS]
+else [Business View].[E1_TABLE].[COV_ID]
+end",
+1422,aSD_REPORT,,[Business View].[E1_TABLE].[30 Total 6 mo XaaS],
+1423,aSD_REPORT,,[Business View].[E1_TABLE].[30 Total 12 mo XaaS],
+1424,aSD_REPORT,,[Business View].[E2_TABLE].[COV_ID],
+1425,aSD_REPORT,,[Business View].[E2_TABLE].[TOTAL_6_MO_XAAS],
+1426,aSD_REPORT,,[Business View].[E2_TABLE].[TOTAL_12_MO_XAAS],
+1427,aSD_REPORT,,[Business View].[F_TABLE].[COVERAGE_ID],
+1428,aSD_REPORT,,"
+[Business View].[F_TABLE].[IS_30_SLASH_46_LT10]",
+1429,aSD_REPORT,,[Business View].[F_TABLE].[DIV_46_GT10],
+1430,aSD_REPORT,,[Business View].[F_TABLE].[DIV_30_GT10],
+1431,aSD_REPORT,,[Business View].[F_TABLE].[IS_DIV_30_SLASH_46_TOTAL],
+1432,aSD_REPORT,,[Business View].[F_TABLE].[DIV_30_LT10],
+1433,aSD_REPORT,,[Business View].[G_TABLE].[Cov Id],
+1434,aSD_REPORT,,[Business View].[G_TABLE].[TOTAL REV Quota - Moonlight],
+1435,aSD_REPORT,,[Business View].[G_TABLE].[TOTAL GP Quota - Moonlight],
+1436,aSD_REPORT,,"COALESCE([C].[COV_ID],[D].[COV_ID])",
+1437,aSD_REPORT,,[C].[C_Validated Rev Target],
+1438,aSD_REPORT,,[C].[C_Validated GP Target],
+1439,aSD_REPORT,,[D].[D 30 Revenue 3Q],
+1440,aSD_REPORT,,[D].[D 30 Revenue 4Q],
+1441,aSD_REPORT,,[D].[D 30 Revenue],
+1442,aSD_REPORT,,[D].[D 30 GP BCP 3Q],
+1443,aSD_REPORT,,[D].[D 30 GP BCP 4Q],
+1444,aSD_REPORT,,[D].[D 30 GP Contract BCP],
+1445,aSD_REPORT,,[D].[D 30 GP BMC 3Q],
+1446,aSD_REPORT,,[D].[D 30 GP BMC 4Q],
+1447,aSD_REPORT,,[D].[D 30 GP Contract BMC],
+1448,aSD_REPORT,,"COALESCE([C&D].[COV_ID],[F].[COV_ID])
+",
+1449,aSD_REPORT,,[C&D].[C_Validated Rev Target],
+1450,aSD_REPORT,,[C&D].[C_Validated GP Target],
+1451,aSD_REPORT,,[C&D].[D 30 Revenue 3Q],
+1452,aSD_REPORT,,[C&D].[D 30 Revenue 4Q],
+1453,aSD_REPORT,,[C&D].[D 30 Revenue],
+1454,aSD_REPORT,,[C&D].[D 30 GP BCP 3Q],
+1455,aSD_REPORT,,[C&D].[D 30 GP BCP 4Q],
+1456,aSD_REPORT,,[C&D].[D 30 GP Contract BCP],
+1457,aSD_REPORT,,[C&D].[D 30 GP BMC 3Q],
+1458,aSD_REPORT,,[C&D].[D 30 GP BMC 4Q],
+1459,aSD_REPORT,,[C&D].[D 30 GP Contract BMC],
+1460,aSD_REPORT,,[F].[F IS 30/46 Total Signings],
+1461,aSD_REPORT,,[F].[F IS 30/46 LT10 Signings],
+1462,aSD_REPORT,,[F].[F Div 30 GT10 Signings],
+1463,aSD_REPORT,,[F].[F Div 46 GT10 Signings],
+1464,aSD_REPORT,,"COALESCE([E1].[COV_ID],[E2].[COV_ID])
+",
+1465,aSD_REPORT,,[E1].[30 Total 6 mo XaaS],
+1466,aSD_REPORT,,[E1].[30 Total 12 mo XaaS],
+1467,aSD_REPORT,,[E2].[TOTAL_6_MO_XAAS],
+1468,aSD_REPORT,,[E2].[TOTAL_12_MO_XAAS],
+1469,aSD_REPORT,,"COALESCE([E1&E2].[COV_ID],[G].[COV_ID])
+",
+1470,aSD_REPORT,,[E1&E2].[E1 30 Total 6 mo XaaS],
+1471,aSD_REPORT,,[E1&E2].[E1 30 Total 12 mo XaaS],
+1472,aSD_REPORT,,[E1&E2].[E2 TOTAL_6_MO_XAAS],
+1473,aSD_REPORT,,[E1&E2].[E2 TOTAL_12_MO_XAAS],
+1474,aSD_REPORT,,[G].[TOTAL REV Quota - Moonlight],
+1475,aSD_REPORT,,[G].[TOTAL GP Quota - Moonlight],
+1476,aSD_REPORT,,"COALESCE([C&D&F].[COV_ID],[E1&E2&G].[COV_ID])
+",
+1477,aSD_REPORT,,"(case when [D&G 30 Revenue] is null then 0
+else [D&G 30 Revenue]
+end)+
+(case when[C 46 Revenue] is null then 0
+else [C 46 Revenue]
+end)
+
+",
+1478,aSD_REPORT,,"(case when [D 30 Revenue] is null then 0
+else [D 30 Revenue]
+end)+
+(case when [G 30 Moonlight Rev] is null then 0
+else [G 30 Moonlight Rev]
+end)
+",
+1479,aSD_REPORT,,[G TOTAL REV Quota - Moonlight],
+1480,aSD_REPORT,,[C&D&F].[D 30 Revenue],
+1481,aSD_REPORT,,[C&D&F].[D 30 Revenue 3Q],
+1482,aSD_REPORT,,[C&D&F].[D 30 Revenue 4Q],
+1483,aSD_REPORT,,[C_Validated Rev Target],
+1484,aSD_REPORT,,"(case when [D 30 GP Contract BCP] is null then 0
+else [D 30 GP Contract BCP]
+end)+
+(case when [G 30 Moonlight GP BCP] is null then 0
+else [G 30 Moonlight GP BCP]
+end)
++
+(case when [C 46 Validated GP Target] is null then 0
+else [C 46 Validated GP Target]
+end)
+",
+1485,aSD_REPORT,,[C&D&F].[D 30 GP Contract BCP],
+1486,aSD_REPORT,,[C&D&F].[D 30 GP BCP 3Q],
+1487,aSD_REPORT,,[C&D&F].[D 30 GP BCP 4Q],
+1488,aSD_REPORT,,[G TOTAL GP Quota - Moonlight],
+1489,aSD_REPORT,,[C_Validated GP Target],
+1490,aSD_REPORT,,"(case when [D 30 GP Contract BMC] is null then 0
+else [D 30 GP Contract BMC]
+end)+
+(case when [G 30 Moonlight GP BMC] is null then 0
+else [G 30 Moonlight GP BMC]
+end)
+
+
+",
+1491,aSD_REPORT,,[C&D&F].[D 30 GP Contract BMC],
+1492,aSD_REPORT,,[C&D&F].[D 30 GP BMC 3Q],
+1493,aSD_REPORT,,[C&D&F].[D 30 GP BMC 4Q],
+1494,aSD_REPORT,,[E1&E2&G].[G TOTAL GP Quota - Moonlight],
+1495,aSD_REPORT,,[C&D&F].[F IS 30/46 Total Signings],
+1496,aSD_REPORT,,[C&D&F].[F IS 30/46 LT10 Signings],
+1497,aSD_REPORT,,[C&D&F].[F Div 30 GT10 Signings],
+1498,aSD_REPORT,,[C&D&F].[F Div 46 GT10 Signings],
+1499,aSD_REPORT,,"(case when [E1 30 Total 6 mo XaaS] is null then 0
+else [E1 30 Total 6 mo XaaS]
+end)+
+(case when [E2 46 Total 6 mo XaaS] is null then 0
+else [E2 46 Total 6 mo XaaS]
+end)
++
+(case when [G 30 Moonlight XaaS] is null then 0
+else [G 30 Moonlight XaaS]
+end)",
+1500,aSD_REPORT,,[E1&E2&G].[E1 30 Total 6 mo XaaS],
+1501,aSD_REPORT,,[E2 TOTAL_6_MO_XAAS],
+1502,aSD_REPORT,,[E1&E2&G].[G TOTAL REV Quota - Moonlight],
+1503,aSD_REPORT,,[C&D&F].[C_Validated Rev Target],
+1504,aSD_REPORT,,[C&D&F].[C_Validated GP Target],
+1505,aSD_REPORT,,[E1&E2&G].[E1 30 Total 12 mo XaaS],
+1506,aSD_REPORT,,[E1&E2&G].[E2 TOTAL_6_MO_XAAS],
+1507,aSD_REPORT,,[E1&E2&G].[E2 TOTAL_12_MO_XAAS],
+1508,aSD_REPORT,,[E1&E2&G].[G TOTAL REV Quota - Moonlight],
+1509,aSD_REPORT,,[E1&E2&G].[G TOTAL GP Quota - Moonlight],
+1510,aSD_REPORT,,"replace(substr([Business View].[QUOTA_KEYSTONE_T_MAIN].[MARKET_NAME],4),'/CSI','')
+",
+1511,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[TERRITORY_TYPE],
+1512,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COVERAGE_ID_NAME],
+1513,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COV_ID],
+1514,aSD_REPORT,,"'unknown'
+",
+1515,aSD_REPORT,,'unknown',
+1516,aSD_REPORT,,'unknown',
+1517,aSD_REPORT,,[Business View].[QUOTA_KEYSTONE_T_MAIN].[COV_ID],
+1518,aSD_REPORT,,"case when 
+[KEYSTONE].[Market Name] is null then 'unknown'
+else  [KEYSTONE].[Market Name]
+end",
+1519,aSD_REPORT,,"case when  [KEYSTONE].[Customer Set] is null
+then 'unknown'
+else  [KEYSTONE].[Customer Set]
+end",
+1520,aSD_REPORT,,"case when [KEYSTONE].[Coverage ID Name] is null
+then 'unknown'
+else [KEYSTONE].[Coverage ID Name]
+end",
+1521,aSD_REPORT,,"COALESCE([C&D&E1&E2&F&G].[COV_ID],[KEYSTONE].[Cov Id])",
+1522,aSD_REPORT,,"case 
+when [Cov ID1] in ('912_CFCNLEA','912_CFLOAC','912_CFCOMEA')
+then 'C000000'
+when [Cov ID1] in ('912_CFDSNLE','912_CFDISWE','912_CFLOAD')
+then 'D000000'
+when [Cov ID1] in ('912_CFBNKEA','912_CFFNMEA','912_CFFSSEA','912_CFLOAF','912_CFINSWE')
+then 'F000000'
+when [Cov ID1] in ('912_CFLOAI')
+then 'I000000'
+when [Cov ID1] in ('912_CFLOAP')
+then 'P000000'
+else  [Cov ID1]
+end",
+1523,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G&C 30 Revenue],
+1524,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G 30 Revenue],
+1525,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight Rev],
+1526,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue],
+1527,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue 3Q],
+1528,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 Revenue 4Q],
+1529,aSD_REPORT,,[C&D&E1&E2&F&G].[C 46 Revenue],
+1530,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G&C BCP GP],
+1531,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP Contract BCP],
+1532,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BCP 3Q],
+1533,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BCP 4Q],
+1534,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight GP BCP],
+1535,aSD_REPORT,,[C&D&E1&E2&F&G].[C 46 Validated GP Target],
+1536,aSD_REPORT,,[C&D&E1&E2&F&G].[D&G BMC GP],
+1537,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP Contract BMC],
+1538,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BMC 3Q],
+1539,aSD_REPORT,,[C&D&E1&E2&F&G].[D 30 GP BMC 4Q],
+1540,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight GP BMC],
+1541,aSD_REPORT,,[C&D&E1&E2&F&G].[F IS 30/46 Total Signings],
+1542,aSD_REPORT,,[C&D&E1&E2&F&G].[F IS 30/46 LT10 Signings],
+1543,aSD_REPORT,,[C&D&E1&E2&F&G].[F Div 30 GT10 Signings],
+1544,aSD_REPORT,,[C&D&E1&E2&F&G].[F Div 46 GT10 Signings],
+1545,aSD_REPORT,,[C&D&E1&E2&F&G].[E XaaS],
+1546,aSD_REPORT,,[C&D&E1&E2&F&G].[E1 30 Total 6 mo XaaS],
+1547,aSD_REPORT,,[C&D&E1&E2&F&G].[E2 46 Total 6 mo XaaS],
+1548,aSD_REPORT,,[C&D&E1&E2&F&G].[G 30 Moonlight XaaS],
+1549,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then 'Communication'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then 'Distribution'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then 'Financial Service'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then 'Industrial'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then 'Public'
+else [Main0].[Market Name]
+end",
+1550,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] IN ('C000000','D000000','F000000','I000000','P000000') then 'unknown'
+else [Main0].[Customer Set]
+end",
+1551,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then '_COMMUNICATIONS PLUG'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then '_DISTRIBUTION PLUG'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then '_FINANCIAL SERVICES PLUG'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then '_INDUSTRIAL PLUG'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then '_PUBLIC PLUG'
+else [Main0].[Coverage ID Name]
+end",
+1552,aSD_REPORT,,"case
+when [B].[AFFILIATE_NUMBER] = 'C000000' then 'C000000'
+when [B].[AFFILIATE_NUMBER] = 'D000000' then 'D000000'
+when [B].[AFFILIATE_NUMBER] = 'F000000' then 'F000000'
+when [B].[AFFILIATE_NUMBER] = 'I000000' then 'I000000'
+when [B].[AFFILIATE_NUMBER] = 'P000000' then 'P000000'
+else [Main0].[Cov ID1]
+end",
+1553,aSD_REPORT,,[Main0].[D&G&C 30 Revenue],
+1554,aSD_REPORT,,[Main0].[D&G 30 Revenue],
+1555,aSD_REPORT,,[Main0].[G 30 Moonlight Rev],
+1556,aSD_REPORT,,[Main0].[D 30 Revenue],
+1557,aSD_REPORT,,[Main0].[D 30 Revenue 3Q],
+1558,aSD_REPORT,,[Main0].[D 30 Revenue 4Q],
+1559,aSD_REPORT,,[Main0].[C 46 Revenue],
+1560,aSD_REPORT,,[Main0].[D&G&C BCP GP],
+1561,aSD_REPORT,,[Main0].[D 30 GP Contract BCP],
+1562,aSD_REPORT,,[Main0].[D 30 GP BCP 3Q],
+1563,aSD_REPORT,,[Main0].[D 30 GP BCP 4Q],
+1564,aSD_REPORT,,[Main0].[G 30 Moonlight GP BCP],
+1565,aSD_REPORT,,[Main0].[C 46 Validated GP Target],
+1566,aSD_REPORT,,[Main0].[D&G BMC GP],
+1567,aSD_REPORT,,[Main0].[D 30 GP Contract BMC],
+1568,aSD_REPORT,,[Main0].[D 30 GP BMC 3Q],
+1569,aSD_REPORT,,[Main0].[D 30 GP BMC 4Q],
+1570,aSD_REPORT,,[Main0].[G 30 Moonlight GP BMC],
+1571,aSD_REPORT,,[Main0].[F IS 30/46 Total Signings],
+1572,aSD_REPORT,,[Main0].[F IS 30/46 LT10 Signings],
+1573,aSD_REPORT,,[Main0].[F Div 30 GT10 Signings],
+1574,aSD_REPORT,,[Main0].[F Div 46 GT10 Signings],
+1575,aSD_REPORT,,[Main0].[E XaaS],
+1576,aSD_REPORT,,[Main0].[E1 30 Total 6 mo XaaS],
+1577,aSD_REPORT,,[Main0].[E2 46 Total 6 mo XaaS],
+1578,aSD_REPORT,,[Main0].[G 30 Moonlight XaaS],
+1579,aSD_REPORT,,[Main].[Market Name],
+1580,aSD_REPORT,,[Main].[Customer Set],
+1581,aSD_REPORT,,[Main].[Coverage ID Name],
+1582,aSD_REPORT,,[Main].[Cov ID],
+1583,aSD_REPORT,,"case
+when [Main].[D&G&C 30 Revenue] is null then 0 
+else [Main].[D&G&C 30 Revenue]
+end",
+1584,aSD_REPORT,,"case
+when [Main].[D&G 30 Revenue] is null then 0 
+else [Main].[D&G 30 Revenue]
+end",
+1585,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight Rev] is null then 0 
+else [Main].[G 30 Moonlight Rev]
+end",
+1586,aSD_REPORT,,"case
+when [Main].[D 30 Revenue] is null then 0
+else [Main].[D 30 Revenue]
+end",
+1587,aSD_REPORT,,"case
+when [Main].[D 30 Revenue 3Q] is null then 0 
+else [Main].[D 30 Revenue 3Q]
+end",
+1588,aSD_REPORT,,"case
+when [Main].[D 30 Revenue 4Q] is null then 0
+else [Main].[D 30 Revenue 4Q]
+end",
+1589,aSD_REPORT,,"case
+when [Main].[C 46 Revenue] is null then 0
+else [Main].[C 46 Revenue]
+end",
+1590,aSD_REPORT,,"case
+when [Main].[D&G&C BCP GP] is null then 0
+else [Main].[D&G&C BCP GP]
+end",
+1591,aSD_REPORT,,"case
+when [Main].[D 30 GP Contract BCP] is null then 0
+else [Main].[D 30 GP Contract BCP]
+end",
+1592,aSD_REPORT,,"case
+when [Main].[D 30 GP BCP 3Q] is null then 0
+else [Main].[D 30 GP BCP 3Q]
+end",
+1593,aSD_REPORT,,"case
+when [Main].[D 30 GP BCP 4Q] is null then 0
+else [Main].[D 30 GP BCP 4Q]
+end",
+1594,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight GP BCP] is null then 0
+else [Main].[G 30 Moonlight GP BCP]
+end",
+1595,aSD_REPORT,,"case
+when [Main].[C 46 Validated GP Target] is null then 0
+else [Main].[C 46 Validated GP Target]
+end",
+1596,aSD_REPORT,,"case
+when [Main].[D&G BMC GP] is null then 0
+else [Main].[D&G BMC GP]
+end",
+1597,aSD_REPORT,,"case
+when [Main].[D 30 GP Contract BMC] is null then 0
+else [Main].[D 30 GP Contract BMC]
+end",
+1598,aSD_REPORT,,"case
+when [Main].[D 30 GP BMC 3Q] is null then 0
+else [Main].[D 30 GP BMC 3Q]
+end",
+1599,aSD_REPORT,,"case
+when [Main].[D 30 GP BMC 4Q] is null then 0
+else [Main].[D 30 GP BMC 4Q]
+end",
+1600,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight GP BMC] is null then 0 
+else [Main].[G 30 Moonlight GP BMC]
+end",
+1601,aSD_REPORT,,"case
+when [Main].[F IS 30/46 Total Signings] is null then 0
+else [Main].[F IS 30/46 Total Signings]
+end",
+1602,aSD_REPORT,,"case
+when [Main].[F IS 30/46 LT10 Signings] is null then 0
+else [Main].[F IS 30/46 LT10 Signings]
+end",
+1603,aSD_REPORT,,"case
+when [Main].[F Div 30 GT10 Signings] is null then 0
+else [Main].[F Div 30 GT10 Signings]
+end",
+1604,aSD_REPORT,,"case
+when [Main].[F Div 46 GT10 Signings] is null then 0
+else [Main].[F Div 46 GT10 Signings]
+end",
+1605,aSD_REPORT,,"case
+when [Main].[E XaaS] is null then 0
+else [Main].[E XaaS]
+end",
+1606,aSD_REPORT,,"case
+when [Main].[E1 30 Total 6 mo XaaS] is null then 0
+else [Main].[E1 30 Total 6 mo XaaS]
+end",
+1607,aSD_REPORT,,"case
+when [Main].[E2 46 Total 6 mo XaaS] is null then 0
+else [Main].[E2 46 Total 6 mo XaaS]
+end",
+1608,aSD_REPORT,,"case
+when [Main].[G 30 Moonlight XaaS] is null then 0
+else [Main].[G 30 Moonlight XaaS]
+end",
+1609,aSD_REPORT,,[Main].[Market Name],
+1610,aSD_REPORT,,[Main].[Customer Set],
+1611,aSD_REPORT,,[Main].[Coverage ID Name],
+1612,aSD_REPORT,,[Main].[Cov ID],
+1613,aSD_REPORT,,[Main2].[Market Name],
+1614,aSD_REPORT,,[Main2].[Customer Set],
+1615,aSD_REPORT,/content/folder[@name='Quota Folder']/package[@name='S&D Package']/model[@name='2017-06-22T08:47:18.794Z'],,
+1616,aSD_REPORT,,,[AFFILIATE_NUMBER] = 'F000000'
+1617,aSD_REPORT,,,[Business View].[C_TABLE].[PERIOD]='2H'
+1618,aSD_REPORT,,,[Business View].[C_TABLE].[BRAND]='IS - ITS'
+1619,aSD_REPORT,,,[COV_ID] IS NOT NULL
+1620,aSD_REPORT,,,[C].[COV_ID] = [D].[COV_ID]
+1621,aSD_REPORT,,,[C&D].[COV_ID] = [F].[COV_ID]
+1622,aSD_REPORT,,,[E1].[COV_ID] = [E2].[COV_ID]
+1623,aSD_REPORT,,,[E1&E2].[COV_ID] = [G].[COV_ID]
+1624,aSD_REPORT,,,[C&D&F].[COV_ID] = [E1&E2&G].[COV_ID]
+1625,aSD_REPORT,,,[C&D&E1&E2&F&G].[COV_ID] = [KEYSTONE].[Cov Id]
+1626,aSD_REPORT,,,[Cov ID] in ?CovID?
+1627,aSD_REPORT,,,[Main0].[Cov ID1] = [B].[CONTRACTS]
+1628,aSD_REPORT,,,[Market Name] in ?Market?
+1629,aSD_REPORT,,,[Customer Set] in ?CustomerSet?

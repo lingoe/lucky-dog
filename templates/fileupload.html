@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome</title>
+
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    
+    <script src="../static/js/jquery-3.2.1.js"></script>
+
+	<script src="../static/js/jquery.ui.widget.js"></script>
+	
+	<script type="text/javascript" src="../static/js/jquery.fileupload.js"></script>
+	<script type="text/javascript" src="../static/js/jquery.fileupload-process.js"></script>
+	<script type="text/javascript" src="../static/js/jquery.fileupload-ui.js"></script>
+
+
+    <style>
+	.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+    </style>
+   
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+	     <li role="presentation"><a href="/userHome">Home</a></li>
+	    <li role="presentation" class="active"><a href="#">Upload</a></li>
+            <li role="presentation" ><a href="/logout">Logout</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">My First Python App</h3>
+      </div>
+
+	<div class="well">
+      <form role="form" method="post" action="/fileupload" enctype="multipart/form-data">
+
+<!-- Form Name -->
+<legend>Upload your cognos specification file here</legend>
+
+                     
+<div class="input-group">
+                <span class="input-group-btn">
+                    <span class="btn btn-primary">
+                        <input type="file" id="fileupload" name="file" multiple>
+                    </span>
+                </span>
+            </div>
+   </div>
+
+
+<!-- Button -->
+<div class="form-group">
+  
+    <p class="text-center">
+    <input id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit" value="Submit" />
+  	</p>
+</div>
+
+
+</form>
+
+</div>
+
+
+    </div>
+  </body>
+</html>
+
